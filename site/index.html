@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Clearance</title>
+<meta name="description" content="Border rejections of Indian food exports: EU, US, UK, Australia and Japan, with news.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap">
+<style>
+:root {
+  --bg: #ffffff; --text: #1c1c1c; --text-2: #55585e; --line: #d4d7dc; --band: #f3f4f6;
+  --bar: #1f3b5c; --on-bar: #ffffff; --link: #0a58b0; --focus: #0a58b0;
+  --high: #b3261e; --med: #8f5600; --low: #55585e; --ok: #1d6b34; --bad: #b3261e;
+  --m-EU: #2a78d6; --m-US: #eb6834; --m-UK: #1baf7a; --m-AU: #eda100; --m-JP: #e87ba4;
+  --font: "Noto Sans", "Noto Sans Devanagari", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14171c; --text: #e8e9eb; --text-2: #a9adb4; --line: #333840; --band: #1d2128; --bar: #0f2236;
+    --link: #7db3ff; --focus: #7db3ff; --high: #ff9c92; --med: #f5bc55; --low: #a9adb4; --ok: #6fd08a; --bad: #ff9c92;
+    --m-EU: #3987e5; --m-US: #d95926; --m-UK: #199e70; --m-AU: #c98500; --m-JP: #d55181; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14171c; --text: #e8e9eb; --text-2: #a9adb4; --line: #333840; --band: #1d2128; --bar: #0f2236;
+  --link: #7db3ff; --focus: #7db3ff; --high: #ff9c92; --med: #f5bc55; --low: #a9adb4; --ok: #6fd08a; --bad: #ff9c92;
+  --m-EU: #3987e5; --m-US: #d95926; --m-UK: #199e70; --m-AU: #c98500; --m-JP: #d55181; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 15px; line-height: 1.55; margin: 0; padding-bottom: 32px; }
+body[data-lang="hi"] { font-size: 16px; line-height: 1.7; }
+a { color: var(--link); }
+h1, h2, h3, p { margin: 0; }
+h2 { font-size: 22px; line-height: 1.25; font-weight: 700; }
+h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+body[data-lang="hi"] h2, body[data-lang="hi"] h3 { line-height: 1.45; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.pad { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); } .wrap { max-width: 900px; margin: 0 auto; }
+.muted { color: var(--text-2); } .small { font-size: 13px; } body[data-lang="hi"] .small { font-size: 14px; }
+.num { font-variant-numeric: tabular-nums; }
+.bar { background: var(--bar); color: var(--on-bar); padding-block: 12px; }
+.bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.bar h1 { font-size: 20px; font-weight: 700; line-height: 1.2; } .bar p { font-size: 12.5px; opacity: .85; line-height: 1.3; }
+.lang { display: flex; gap: 4px; flex: none; }
+.lang button { background: transparent; color: var(--on-bar); border: 1px solid rgba(255,255,255,.45); padding: 5px 10px; font: inherit; font-size: 13.5px; cursor: pointer; border-radius: 3px; min-height: 34px; }
+.lang button[aria-pressed="true"] { background: #fff; color: #1f3b5c; border-color: #fff; font-weight: 600; }
+.nav { border-bottom: 1px solid var(--line); background: var(--band); position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bar); }
+.nav .wrap { display: flex; overflow-x: auto; scrollbar-width: none; }
+.nav .wrap::-webkit-scrollbar { display: none; }
+.nav button { flex: none; background: transparent; border: 0; border-bottom: 3px solid transparent; padding: 11px 12px 8px; font: inherit; font-size: 14.5px; color: var(--text-2); cursor: pointer; white-space: nowrap; }
+.nav button[aria-selected="true"] { color: var(--text); font-weight: 600; border-bottom-color: var(--link); }
+main { padding-block: 20px 0; display: flex; flex-direction: column; gap: 22px; }
+section { border-top: 1px solid var(--line); padding-top: 14px; min-width: 0; }
+section.first, main > section:first-child { border-top: 0; padding-top: 0; }
+.form { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: flex-end; }
+.k { display: block; font-size: 13px; font-weight: 600; margin-bottom: 4px; } body[data-lang="hi"] .k { font-size: 14px; }
+select, input[type="search"] { font: inherit; color: var(--text); background: var(--bg); border: 1px solid #8d929a; border-radius: 3px; padding: 8px 10px; min-height: 42px; max-width: 100%; }
+.chk { display: inline-flex; align-items: center; gap: 8px; min-height: 42px; cursor: pointer; font-size: 14px; }
+.chk input { width: 18px; height: 18px; margin: 0; }
+.head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; }
+.tier { font-weight: 700; font-size: 15px; white-space: nowrap; }
+.tier::before { content: ""; display: inline-block; width: 10px; height: 10px; margin-right: 7px; background: currentColor; }
+.tier.HIGH { color: var(--high); } .tier.MEDIUM { color: var(--med); } .tier.WATCH, .tier.NONE { color: var(--low); }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+th, td { text-align: left; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 600; font-size: 13px; color: var(--text-2); white-space: nowrap; } body[data-lang="hi"] th { font-size: 14px; }
+td.r, th.r { text-align: right; white-space: nowrap; }
+th button { all: unset; cursor: pointer; font: inherit; color: inherit; font-weight: 600; } th button:focus-visible { outline: 3px solid var(--focus); }
+th button[data-dir]::after { content: attr(data-dir); margin-left: 3px; }
+tr.click { cursor: pointer; } tr.click:hover td, tr.sel td { background: var(--band); }
+.scroll { overflow-x: auto; } .scroll table { min-width: 760px; }
+.scroll td:first-child, .scroll th:first-child { position: sticky; left: 0; background: var(--bg); padding-right: 12px; z-index: 1; }
+.sw { display: inline-block; width: 10px; height: 10px; margin-right: 6px; flex: none; }
+.bar-cell { width: 34%; } .b { height: 7px; display: block; background: var(--link); }
+dl.facts { margin: 0; display: grid; grid-template-columns: 1fr auto; }
+dl.facts dt, dl.facts dd { margin: 0; padding: 8px 0; border-bottom: 1px solid var(--line); }
+dl.facts dd { text-align: right; font-weight: 600; padding-left: 16px; }
+ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+.btn { display: inline-block; font: inherit; font-size: 14.5px; padding: 9px 14px; min-height: 42px; border: 1px solid var(--bar); background: var(--bar); color: var(--on-bar); border-radius: 3px; cursor: pointer; text-decoration: none; }
+.btn.alt { background: transparent; color: var(--link); border-color: var(--link); }
+.row { display: flex; flex-wrap: wrap; gap: 10px; }
+details { border-top: 1px solid var(--line); } details > summary { cursor: pointer; padding: 11px 0; font-weight: 600; } details > div { padding-bottom: 12px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--text-2); margin-bottom: 6px; }
+.legend i { display: inline-block; width: 10px; height: 10px; margin-right: 5px; }
+.chart { width: 100%; height: auto; display: block; overflow: visible; }
+.chart text { font-size: 10px; fill: var(--text-2); font-family: var(--font); } .chart .grid { stroke: var(--line); stroke-width: 1; }
+.tip { position: fixed; z-index: 20; pointer-events: none; background: var(--text); color: var(--bg); font-size: 12.5px; padding: 5px 8px; border-radius: 3px; max-width: 240px; } .tip[hidden] { display: none; }
+.rec { border-top: 1px solid var(--line); padding-block: 10px; } .rec:first-child { border-top: 0; }
+.meta { font-size: 13px; color: var(--text-2); display: flex; flex-wrap: wrap; gap: 2px 12px; align-items: center; } body[data-lang="hi"] .meta { font-size: 14px; }
+.meta .t { display: inline-flex; align-items: center; }
+.filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; } .filters select, .filters input { width: 100%; }
+.news { border-top: 1px solid var(--line); padding-block: 10px; } .news:first-child { border-top: 0; }
+.news a.h { font-weight: 600; text-decoration: none; } .news a.h:hover { text-decoration: underline; }
+.flag { font-size: 12px; font-weight: 700; color: var(--high); margin-right: 6px; }
+.empty { padding: 18px 0; color: var(--text-2); }
+.st-ok { color: var(--ok); font-weight: 600; } .st-bad { color: var(--bad); font-weight: 600; } .st-na { color: var(--text-2); font-weight: 600; }
+.disc { font-size: 13px; color: var(--text-2); border-top: 1px solid var(--line); margin-top: 26px; padding-top: 12px; } body[data-lang="hi"] .disc { font-size: 14px; }
+.loading { padding: 40px 0; text-align: center; color: var(--text-2); }
+</style>
+</head>
+<body>
+<div class="bar"><div class="wrap pad">
+  <div><h1>Clearance</h1><p id="tagline"></p></div>
+  <div class="lang" role="group" aria-label="Language / भाषा" id="langseg">
+    <button type="button" data-act="lang" data-v="en" aria-pressed="false" lang="en">English</button>
+    <button type="button" data-act="lang" data-v="hi" aria-pressed="false" lang="hi">हिन्दी</button>
+  </div>
+</div></div>
+<nav class="nav"><div class="wrap pad" role="tablist" id="tabs"></div></nav>
+<div class="wrap pad">
+  <main id="main"><div class="loading">Loading…</div></main>
+  <p class="disc" id="foot"></p>
+</div>
+<div class="tip" id="tip" hidden role="status"></div>
+<script>
+(function () {
+  'use strict';
+  var MK = ['EU', 'US', 'UK', 'AU', 'JP'];
+  var OTHERS = { CN: ['China', 'चीन'], HK: ['Hong Kong', 'हांगकांग'], AE: ['UAE', 'UAE'], SA: ['Saudi Arabia', 'सऊदी अरब'], BD: ['Bangladesh', 'बांग्लादेश'], NP: ['Nepal', 'नेपाल'], SG: ['Singapore', 'सिंगापुर'], CA: ['Canada', 'कनाडा'], IR: ['Iran', 'ईरान'] };
+  var MNAME = { EU: ['EU', 'यूरोप (EU)'], US: ['USA', 'अमेरिका'], UK: ['UK', 'यूके'], AU: ['Australia', 'ऑस्ट्रेलिया'], JP: ['Japan', 'जापान'] };
+  var SRC = {
+    EU: ['RASFF Window', 'https://webgate.ec.europa.eu/rasff-window/screen/search'],
+    US: ['FDA import refusals', 'https://www.accessdata.fda.gov/scripts/importrefusals/'],
+    UK: ['FSA border notifications', 'https://www.food.gov.uk/our-work/border-notifications'],
+    AU: ['DAFF failing food reports', 'https://www.agriculture.gov.au/biosecurity-trade/import/goods/food/inspection-testing/failing-food-reports'],
+    JP: ['MHLW violation cases', 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/yunyu_kanshi/ihan/index.html']
+  };
+  var S = {
+    en: {
+      tagline: 'Border rejections of Indian food exports',
+      tab_check: 'Check', tab_ranking: 'Ranking', tab_news: 'News', tab_records: 'Records', tab_alerts: 'FDA alerts', tab_sources: 'Sources',
+      check_title: 'Check a product', lbl_product: 'Product', lbl_market: 'Destination', all_markets: 'All destinations', docs: 'Include notices about documents only',
+      tier_HIGH: 'High', tier_MEDIUM: 'Medium', tier_WATCH: 'Watch', tier_NONE: 'No records', no_records_h: 'Products with no records', priority: 'Priority',
+      f_rej: 'Notices, last 24 months', f_rank: 'Rank by count', f_rate: 'Per year per $100M exported', f_of: 'of', f_na: 'n/a', f_rate_basis: 'EU+US',
+      dest_h: 'By destination', why_h: 'Why shipments are stopped', trend_h: 'By month', trend_table: 'Show as table', rules_h: 'Limits', todo_h: 'What to do',
+      news_h: 'Latest news', all_news: 'All news for this product', alerts_h: 'FDA import alerts', recent_h: 'Latest records', more_h: 'Why the limits differ',
+      rules_eu: 'EU', rules_us: 'USA', rules_in: 'India (FSSAI)', hazard: 'Main hazard', market: 'Destination', limit: 'Limit', month: 'Month',
+      no_limits: 'No limit data for this product yet.',
+      gap_mismatch: 'Limits differ between markets', gap_enforcement: 'Not a limits gap. A supply-chain problem.', gap_norule: 'No chemical limit. Labels and claims are the issue.',
+      unreliable: 'Rate unreliable', rel_note: 'Note', no_alerts: 'No FDA alert names this product. General alerts still apply.',
+      no_data: 'No records in the last 24 months.',
+      all_records: function (n) { return 'See all ' + n + ' records'; }, share_wa: 'Send on WhatsApp', copy: 'Copy summary', copied: 'Copied',
+      rank_title: 'Ranking', rank_key: 'High: top 5 by count, or top 5 by rate. Medium: top 10 by count, or limits differ. * Rate unreliable. Rate uses EU+US export values.',
+      th_product: 'Product', th_tier: 'Priority', th_total: 'Total', th_rate: 'Per $100M', th_gap: 'Limits differ', th_alert: 'FDA alert',
+      slope_h: 'Rank by count and rank by rate', sl_count: 'By count', sl_rate: 'By rate', sl_up: 'Higher by rate', sl_down: 'Lower by rate', sl_unrel: 'Rate unreliable',
+      yes: 'Yes', no: 'No', gapword_mismatch: 'Yes', gapword_enforcement: 'No', gapword_norule: 'No limit',
+      news_title: 'News', events_h: 'Reported market actions', f_alerts: 'Warnings and bans only', f_all: 'All', f_any_market: 'All destinations', news_empty: 'No news matches.',
+      news_updated: 'Updated', news_none: 'News has not loaded yet. It fills in after the first daily update.', flag: 'ALERT',
+      rec_title: 'Records', f_cat: 'Product', f_mkt: 'Destination', f_reason: 'Reason', f_search: 'Search', f_search_ph: 'Search description', csv: 'Download CSV',
+      showing: function (n, t) { return 'Showing ' + n + ' of ' + t; }, more: 'Show 40 more', no_match: 'No records match.',
+      risk_1: 'Serious', risk_2: 'Potentially serious', risk_3: 'Low risk', src_open: 'Source',
+      al_title: 'FDA import alerts for India', al_rel: 'Naming these products', al_gen: 'General', al_other: 'Other (not food exports)', al_why: 'Why', al_link: 'FDA page',
+      src_title: 'Sources', th_src: 'Source', th_latest: 'Latest record', th_checked: 'Last checked', th_status: 'Status',
+      st_ok: 'Updating', st_bad: 'Update failed', st_key: 'Not set up', st_snap: 'Snapshot', st_none: 'Not checked yet', news_src: 'News (Google News and feeds)',
+      counted_h: 'How it is counted',
+      counted: ['EU counts are notifications; every other market counts refusal or failure lines. One shipment can make several.', 'Rate = notices in 24 months divided by 2, per $100M of FY2024-25 exports to that market. Only EU and US have export values.', 'Limits are from published rules and have not been independently reviewed.', 'UK, Australia and Japan data start from the first update. UAE, Saudi Arabia, Bangladesh, Nepal and Singapore publish no shipment data.'],
+      data_to: 'Data to', loading: 'Loading…', load_fail: 'Could not load the data.', retry: 'Try again',
+      disc: 'For information only, not legal or compliance advice. Confirm limits with your lab, buyer or EIC office before relying on them.'
+    },
+    hi: {
+      tagline: 'भारतीय खाद्य निर्यात के बॉर्डर रिजेक्शन',
+      tab_check: 'जाँचें', tab_ranking: 'प्राथमिकता', tab_news: 'समाचार', tab_records: 'रिकॉर्ड', tab_alerts: 'FDA अलर्ट', tab_sources: 'स्रोत',
+      check_title: 'उत्पाद जाँचें', lbl_product: 'उत्पाद', lbl_market: 'गंतव्य', all_markets: 'सभी गंतव्य', docs: 'सिर्फ़ दस्तावेज़ वाले नोटिस भी गिनें',
+      tier_HIGH: 'उच्च', tier_MEDIUM: 'मध्यम', tier_WATCH: 'निगरानी', tier_NONE: 'रिकॉर्ड नहीं', no_records_h: 'जिन उत्पादों के रिकॉर्ड नहीं', priority: 'प्राथमिकता',
+      f_rej: 'नोटिस, पिछले 24 महीने', f_rank: 'संख्या में स्थान', f_rate: 'प्रति वर्ष प्रति $100M निर्यात', f_of: 'में से', f_na: 'उपलब्ध नहीं', f_rate_basis: 'EU+US',
+      dest_h: 'गंतव्य के हिसाब से', why_h: 'खेपें क्यों रोकी जाती हैं', trend_h: 'महीने के हिसाब से', trend_table: 'तालिका में देखें', rules_h: 'सीमाएँ', todo_h: 'क्या करें',
+      news_h: 'ताज़ा समाचार', all_news: 'इस उत्पाद के सभी समाचार', alerts_h: 'FDA इम्पोर्ट अलर्ट', recent_h: 'ताज़ा रिकॉर्ड', more_h: 'सीमाएँ अलग क्यों हैं',
+      rules_eu: 'EU', rules_us: 'अमेरिका', rules_in: 'भारत (FSSAI)', hazard: 'मुख्य जोखिम', market: 'गंतव्य', limit: 'सीमा', month: 'महीना',
+      no_limits: 'इस उत्पाद के लिए अभी सीमा का डेटा नहीं है।',
+      gap_mismatch: 'बाज़ारों में सीमाएँ अलग हैं', gap_enforcement: 'सीमाओं का अंतर नहीं। सप्लाई-चेन की समस्या।', gap_norule: 'कोई रासायनिक सीमा नहीं। समस्या लेबल और दावों की है।',
+      unreliable: 'दर भरोसेमंद नहीं', rel_note: 'ध्यान दें', no_alerts: 'किसी FDA अलर्ट में इस उत्पाद का नाम नहीं है। सामान्य अलर्ट फिर भी लागू हैं।',
+      no_data: 'पिछले 24 महीनों में कोई रिकॉर्ड नहीं।',
+      all_records: function (n) { return 'सभी ' + n + ' रिकॉर्ड देखें'; }, share_wa: 'WhatsApp पर भेजें', copy: 'सारांश कॉपी करें', copied: 'कॉपी हो गया',
+      rank_title: 'प्राथमिकता', rank_key: 'उच्च: संख्या में शीर्ष 5, या दर में शीर्ष 5। मध्यम: संख्या में शीर्ष 10, या सीमाएँ अलग। * दर भरोसेमंद नहीं। दर EU+US निर्यात मूल्य से बनती है।',
+      th_product: 'उत्पाद', th_tier: 'प्राथमिकता', th_total: 'कुल', th_rate: 'प्रति $100M', th_gap: 'सीमाएँ अलग', th_alert: 'FDA अलर्ट',
+      slope_h: 'संख्या और दर के हिसाब से स्थान', sl_count: 'संख्या से', sl_rate: 'दर से', sl_up: 'दर में ऊपर', sl_down: 'दर में नीचे', sl_unrel: 'दर भरोसेमंद नहीं',
+      yes: 'हाँ', no: 'नहीं', gapword_mismatch: 'हाँ', gapword_enforcement: 'नहीं', gapword_norule: 'सीमा नहीं',
+      news_title: 'समाचार', events_h: 'रिपोर्ट की गई बाज़ार कार्रवाइयाँ', f_alerts: 'सिर्फ़ चेतावनी और प्रतिबंध', f_all: 'सभी', f_any_market: 'सभी गंतव्य', news_empty: 'कोई समाचार नहीं मिला।',
+      news_updated: 'अपडेट', news_none: 'समाचार अभी लोड नहीं हुए। पहले दैनिक अपडेट के बाद भर जाएँगे।', flag: 'अलर्ट',
+      rec_title: 'रिकॉर्ड', f_cat: 'उत्पाद', f_mkt: 'गंतव्य', f_reason: 'कारण', f_search: 'खोजें', f_search_ph: 'विवरण में खोजें', csv: 'CSV डाउनलोड करें',
+      showing: function (n, t) { return t + ' में से ' + n + ' दिख रहे हैं'; }, more: '40 और दिखाएँ', no_match: 'कोई रिकॉर्ड नहीं मिला।',
+      risk_1: 'गंभीर', risk_2: 'संभावित गंभीर', risk_3: 'कम जोखिम', src_open: 'स्रोत',
+      al_title: 'भारत के लिए FDA इम्पोर्ट अलर्ट', al_rel: 'इन उत्पादों का नाम लेने वाले', al_gen: 'सामान्य', al_other: 'अन्य (खाद्य निर्यात नहीं)', al_why: 'क्यों', al_link: 'FDA पेज',
+      src_title: 'स्रोत', th_src: 'स्रोत', th_latest: 'सबसे नया रिकॉर्ड', th_checked: 'आखिरी जाँच', th_status: 'स्थिति',
+      st_ok: 'अपडेट हो रहा है', st_bad: 'अपडेट विफल', st_key: 'सेट नहीं है', st_snap: 'स्नैपशॉट', st_none: 'अभी जाँचा नहीं', news_src: 'समाचार (Google News और फ़ीड)',
+      counted_h: 'गिनती कैसे होती है',
+      counted: ['EU की गिनती नोटिफिकेशन है; बाकी बाज़ारों में रिफ्यूज़ल या फ़ेल लाइन। एक शिपमेंट से कई लाइन बन सकती हैं।', 'दर = 24 महीने के नोटिस ÷ 2, उस बाज़ार को FY2024-25 के हर $100M निर्यात पर। निर्यात मूल्य सिर्फ़ EU और US के हैं।', 'सीमाएँ प्रकाशित नियमों से ली गई हैं और स्वतंत्र रूप से जाँची नहीं गई हैं।', 'UK, ऑस्ट्रेलिया और जापान का डेटा पहले अपडेट से शुरू होता है। UAE, सऊदी अरब, बांग्लादेश, नेपाल और सिंगापुर शिपमेंट डेटा प्रकाशित नहीं करते।'],
+      data_to: 'डेटा', loading: 'लोड हो रहा है…', load_fail: 'डेटा लोड नहीं हो सका।', retry: 'फिर कोशिश करें',
+      disc: 'सिर्फ़ जानकारी के लिए, कानूनी या अनुपालन सलाह नहीं। भरोसा करने से पहले अपनी लैब, खरीदार या EIC कार्यालय से सीमाओं की पुष्टि करें।'
+    }
+  };
+  var MONTH_EN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  var MONTH_HI = ['जन', 'फ़र', 'मार्च', 'अप्र', 'मई', 'जून', 'जुल', 'अग', 'सित', 'अक्टू', 'नव', 'दिस'];
+  var TABS = ['check', 'ranking', 'news', 'records', 'alerts', 'sources'];
+
+  var D = null;           // loaded data
+  var X = null;           // derived stats
+  var st = { lang: 'en', tab: 'check', cat: '', mk: 'ALL', docs: false, sort: { k: 'tier', dir: 1 }, rf: { cat: '', mk: '', reason: '', q: '' }, nf: { cat: '', mk: '', alerts: false }, shown: 40 };
+
+  /* ---------- helpers */
+  function T(k) { return S[st.lang][k]; }
+  function L(o) { return o ? o[st.lang] : ''; }
+  function N(n) { return Number(n).toLocaleString('en-IN'); }
+  function F1(n) { return Number(n).toLocaleString('en-IN', { maximumFractionDigits: 1, minimumFractionDigits: 1 }); }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function hi() { return st.lang === 'hi' ? 1 : 0; }
+  function mname(m) { return (MNAME[m] || OTHERS[m] || [m, m])[hi()]; }
+  function cat(id) { return D.catById[id]; }
+  function cname(id) { var c = D.catById[id]; return c ? c[st.lang] : id; }
+  function fdate(s) { if (!s) return ''; var p = s.split('-'); return (+p[2]) + ' ' + (hi() ? MONTH_HI : MONTH_EN)[+p[1] - 1] + ' ' + p[0]; }
+  function mlabel(ym) { var p = ym.split('-'); return (hi() ? MONTH_HI : MONTH_EN)[+p[1] - 1] + ' ' + p[0].slice(2); }
+  function sw(m) { return '<i class="sw" style="background:var(--m-' + m + ')"></i>'; }
+  function mtag(m) { return '<span class="t">' + sw(m) + esc(mname(m)) + '</span>'; }
+  function qs(name) { var m = new RegExp('[?&]' + name + '=([^&]*)').exec(location.search); return m ? decodeURIComponent(m[1]) : ''; }
+
+  /* ---------- load */
+  function getJSON(name) {
+    if (window.__DATA__ && window.__DATA__[name]) return Promise.resolve(window.__DATA__[name]);
+    var v = Math.floor(Date.now() / 600000);
+    return fetch('data/' + name + '.json?v=' + v, { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw new Error(name + ' ' + r.status); return r.json(); });
+  }
+  function load() {
+    var names = ['records', 'categories', 'reasons', 'limits', 'fda_alerts', 'events', 'meta', 'news'];
+    return Promise.all(names.map(function (n) {
+      return getJSON(n).catch(function (e) { if (n === 'news' || n === 'events' || n === 'fda_alerts') return n === 'news' ? { items: [] } : []; throw e; });
+    })).then(function (r) {
+      D = { rows: r[0].rows, cats: r[1].categories, groups: r[1].groups, reasons: r[2], limits: r[3], alerts: r[4], events: r[5], meta: r[6], news: r[7].items || [], newsUpdated: r[7].updated || '' };
+      D.catById = {}; D.cats.forEach(function (c) { D.catById[c.id] = c; });
+      D.reasonIdx = {}; D.reasons.forEach(function (x, i) { D.reasonIdx[x.id] = i; });
+    });
+  }
+
+  /* ---------- derived stats */
+  function asof() { var a = qs('asof'); return a || new Date().toISOString().slice(0, 10); }
+  function monthsList(a) {
+    var y = +a.slice(0, 4), m = +a.slice(5, 7), out = [];
+    for (var i = 23; i >= 0; i--) { var yy = y, mm = m - i; while (mm < 1) { mm += 12; yy--; } out.push(yy + '-' + (mm < 10 ? '0' : '') + mm); }
+    return out;
+  }
+  function isDocsOnly(r) { return r[2].length === 1 && r[2][0] === 'docs'; }
+  function compute(opts) {
+    opts = opts || {};
+    var a = opts.asof || asof(), months = monthsList(a), start = opts.start || (months[0] + '-01'), docs = opts.docs != null ? opts.docs : st.docs;
+    var markets = opts.markets || MK;
+    var cnt = {}, monthly = {}, reasons = {}, rowsBy = {};
+    D.cats.forEach(function (c) { cnt[c.id] = { total: 0 }; monthly[c.id] = {}; reasons[c.id] = {}; rowsBy[c.id] = []; MK.forEach(function (m) { cnt[c.id][m] = 0; monthly[c.id][m] = months.map(function () { return 0; }); reasons[c.id][m] = {}; }); });
+    D.rows.forEach(function (r) {
+      var d = r[3]; if (d < start || d > a + '~') return;
+      if (!docs && isDocsOnly(r)) return;
+      if (markets.indexOf(r[0]) < 0 || !cnt[r[1]]) return;
+      var c = cnt[r[1]]; c[r[0]]++; c.total++;
+      var mi = months.indexOf(d.slice(0, 7)); if (mi >= 0) monthly[r[1]][r[0]][mi]++;
+      r[2].forEach(function (x) { reasons[r[1]][r[0]][x] = (reasons[r[1]][r[0]][x] || 0) + 1; });
+      rowsBy[r[1]].push(r);
+    });
+    // rates (EU + US export values only)
+    D.cats.forEach(function (c) {
+      var t = c.trade || {}, u = t.us, e = t.eu, o = c; o.rateEU = o.rateUS = o.rateComb = null;
+      var yrs = 2;
+      if (e && e.val) o.rateEU = (cnt[c.id].EU / yrs) / (e.val / 100);
+      if (u && u.val) o.rateUS = (cnt[c.id].US / yrs) / (u.val / 100);
+      if (u && u.val && e && e.val) o.rateComb = ((cnt[c.id].US + cnt[c.id].EU) / yrs) / ((u.val + e.val) / 100);
+    });
+    var tot = D.cats.map(function (c) { return cnt[c.id].total; });
+    var rates = D.cats.map(function (c) { return c.rateComb; });
+    var info = {};
+    D.cats.forEach(function (c) {
+      var n = cnt[c.id].total, rc = n > 0 ? 1 + tot.filter(function (x) { return x > n; }).length : null;
+      var rr = c.rateComb != null ? 1 + rates.filter(function (x) { return x != null && x > c.rateComb; }).length : null;
+      var low = c.id === 'coriander';
+      var gap = c.p3 && D.limits[c.p3] ? D.limits[c.p3].type : null;
+      var tier;
+      if (n === 0) tier = 'NONE';
+      else if ((rc <= 5) || (rr != null && rr <= 5 && !low)) tier = 'HIGH';
+      else if (rc <= 10 || gap === 'mismatch') tier = 'MEDIUM';
+      else tier = 'WATCH';
+      info[c.id] = { n: n, rc: rc, rr: rr, tier: tier, gap: gap };
+    });
+    return { asof: a, months: months, start: start, cnt: cnt, monthly: monthly, reasons: reasons, rowsBy: rowsBy, info: info, active: tot.filter(function (x) { return x > 0; }).length };
+  }
+  function recompute() { X = compute(); }
+
+  /* ---------- charts */
+  function niceMax(v) { if (v <= 4) return 4; var p = Math.pow(10, Math.floor(Math.log10(v))), f = v / p; return (f <= 2 ? 2 : f <= 5 ? 5 : 10) * p; }
+  function trendChart(id, mk) {
+    var keys = mk === 'ALL' ? MK.filter(function (m) { return X.cnt[id][m] > 0; }) : [mk];
+    if (!keys.length) keys = [mk === 'ALL' ? 'EU' : mk];
+    var W = 640, H = 170, pl = 28, pr = 4, pt = 8, pb = 22, n = X.months.length, bw = (W - pl - pr) / n;
+    var tot = X.months.map(function (_, i) { return keys.reduce(function (s, k) { return s + X.monthly[id][k][i]; }, 0); });
+    var mx = niceMax(Math.max.apply(null, tot.concat([1]))), ph = H - pt - pb;
+    function y(v) { return pt + ph - v / mx * ph; }
+    var g = '';
+    [0, mx / 2, mx].forEach(function (t) { g += '<line class="grid" x1="' + pl + '" x2="' + (W - pr) + '" y1="' + y(t) + '" y2="' + y(t) + '"/><text x="' + (pl - 5) + '" y="' + (y(t) + 3) + '" text-anchor="end">' + (Math.round(t * 10) / 10) + '</text>'; });
+    var bars = '';
+    X.months.forEach(function (mo, i) {
+      var x = pl + i * bw + bw * 0.2, w = bw * 0.6, acc = 0, parts = [];
+      keys.forEach(function (k) {
+        var v = X.monthly[id][k][i]; parts.push(mname(k) + ' ' + v);
+        if (v > 0) { var h = v / mx * ph, gap = acc > 0 ? 2 : 0; bars += '<rect x="' + x.toFixed(1) + '" y="' + y(acc + v).toFixed(1) + '" width="' + w.toFixed(1) + '" height="' + Math.max(1, h - gap).toFixed(1) + '" fill="var(--m-' + k + ')"/>'; }
+        acc += v;
+      });
+      bars += '<rect x="' + (pl + i * bw).toFixed(1) + '" y="' + pt + '" width="' + bw.toFixed(1) + '" height="' + ph + '" fill="transparent" data-tip="' + esc(mlabel(mo) + ': ' + parts.join(' · ')) + '"/>';
+      if (i % 4 === 0) bars += '<text x="' + (pl + i * bw + bw / 2) + '" y="' + (H - 6) + '" text-anchor="middle">' + mlabel(mo) + '</text>';
+    });
+    var lg = '<div class="legend">' + keys.map(function (k) { return '<span><i style="background:var(--m-' + k + ')"></i>' + esc(mname(k)) + '</span>'; }).join('') + '</div>';
+    var tbl = '<details><summary>' + esc(T('trend_table')) + '</summary><div class="scroll"><table style="min-width:0"><thead><tr><th>' + esc(T('month')) + '</th>' + keys.map(function (k) { return '<th class="r">' + esc(mname(k)) + '</th>'; }).join('') + '</tr></thead><tbody>' +
+      X.months.map(function (mo, i) { return '<tr><td>' + esc(mlabel(mo)) + '</td>' + keys.map(function (k) { return '<td class="r num">' + X.monthly[id][k][i] + '</td>'; }).join('') + '</tr>'; }).join('') + '</tbody></table></div></details>';
+    return lg + '<svg class="chart" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(T('trend_h') + ': ' + cname(id)) + '">' + g + bars + '</svg>' + tbl;
+  }
+  function slopeChart() {
+    var set = D.cats.filter(function (c) { return c.rateComb != null && X.cnt[c.id].EU + X.cnt[c.id].US > 0; });
+    var byCount = set.slice().sort(function (a, b) { return (X.cnt[b.id].EU + X.cnt[b.id].US) - (X.cnt[a.id].EU + X.cnt[a.id].US); });
+    var byRate = set.slice().sort(function (a, b) { return b.rateComb - a.rateComb; });
+    var rowH = 24, top = 40, W = 360, H = top + set.length * rowH + 6, xl = 120, xr = 236, rankC = {}, rankR = {};
+    byCount.forEach(function (c, i) { rankC[c.id] = i; }); byRate.forEach(function (c, i) { rankR[c.id] = i; });
+    var lines = '', lab = '<text x="' + xl + '" y="14" text-anchor="end" style="font-size:11px;font-weight:700;fill:var(--text)">' + esc(T('sl_count')) + '</text><text x="' + xr + '" y="14" style="font-size:11px;font-weight:700;fill:var(--text)">' + esc(T('sl_rate')) + '</text>';
+    set.forEach(function (c) {
+      var yl = top + rankC[c.id] * rowH, yr = top + rankR[c.id] * rowH, delta = rankC[c.id] - rankR[c.id], unrel = c.id === 'coriander', col = 'var(--text-2)', sw = 1.2, dash = '';
+      if (unrel) dash = ' stroke-dasharray="4 3"'; else if (delta >= 4) { col = 'var(--high)'; sw = 2.2; } else if (delta <= -4) { col = 'var(--m-EU)'; sw = 1.6; }
+      lines += '<line x1="' + (xl + 8) + '" y1="' + yl + '" x2="' + (xr - 8) + '" y2="' + yr + '" stroke="' + col + '" stroke-width="' + sw + '"' + dash + '/>';
+      lab += '<circle cx="' + (xr - 4) + '" cy="' + yr + '" r="3" fill="' + col + '"/><text x="' + (xr + 6) + '" y="' + (yr + 3.5) + '" style="font-size:11px;fill:var(--text)">' + esc(short(c)) + (unrel ? ' *' : '') + '</text>';
+      lab += '<circle cx="' + (xl + 4) + '" cy="' + yl + '" r="3" fill="' + col + '"/><text x="' + (xl - 6) + '" y="' + (yl + 3.5) + '" text-anchor="end" style="font-size:11px;fill:var(--text)">' + esc(short(c)) + '</text>';
+      lines += '<rect x="0" y="' + (yl - 11) + '" width="' + W + '" height="22" fill="transparent" data-tip="' + esc(short(c) + ': #' + (rankC[c.id] + 1) + ' → #' + (rankR[c.id] + 1)) + '"/>';
+    });
+    var leg = '<div class="legend"><span><i style="background:var(--high)"></i>' + esc(T('sl_up')) + '</span><span><i style="background:var(--m-EU)"></i>' + esc(T('sl_down')) + '</span><span>* ' + esc(T('sl_unrel')) + '</span></div>';
+    return leg + '<svg class="chart" style="max-width:420px" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(T('slope_h')) + '">' + lines + lab + '</svg>';
+  }
+  function short(c) { var n = c[st.lang]; return n.length > 18 ? n.replace(/ \(.*$/, '').replace(/ & .*$/, '') : n; }
+
+  /* ---------- shared pieces */
+  function catSelect(id, val, act, all) {
+    var html = all ? '<option value="">' + esc(T('f_all')) + '</option>' : '';
+    D.groups.forEach(function (g) {
+      var items = D.cats.filter(function (c) { return c.group === g.id; }).sort(function (a, b) { return a[st.lang].localeCompare(b[st.lang], st.lang); });
+      html += '<optgroup label="' + esc(g[st.lang]) + '">' + items.map(function (c) { return '<option value="' + c.id + '"' + (c.id === val ? ' selected' : '') + '>' + esc(c[st.lang]) + '</option>'; }).join('') + '</optgroup>';
+    });
+    return '<select id="' + id + '" ' + act + '>' + html + '</select>';
+  }
+  function mktSelect(id, val, act, allLabel, withOthers) {
+    var o = '<option value="' + (withOthers ? '' : 'ALL') + '"' + ((val === 'ALL' || val === '') ? ' selected' : '') + '>' + esc(allLabel) + '</option>';
+    o += MK.map(function (m) { return '<option value="' + m + '"' + (m === val ? ' selected' : '') + '>' + esc(mname(m)) + '</option>'; }).join('');
+    if (withOthers) o += Object.keys(OTHERS).map(function (m) { return '<option value="' + m + '"' + (m === val ? ' selected' : '') + '>' + esc(mname(m)) + '</option>'; }).join('');
+    return '<select id="' + id + '" ' + act + '>' + o + '</select>';
+  }
+  function docsBox() { return '<label class="chk"><input type="checkbox" data-act="docs"' + (st.docs ? ' checked' : '') + '>' + esc(T('docs')) + '</label>'; }
+  function reasonTable(counts, total, color) {
+    var items = Object.keys(counts).map(function (k) { return [k, counts[k]]; }).sort(function (a, b) { return b[1] - a[1]; }).slice(0, 6);
+    var max = Math.max.apply(null, items.map(function (x) { return x[1]; }).concat([1]));
+    return '<table><tbody>' + items.map(function (x) {
+      var r = D.reasons[D.reasonIdx[x[0]]] || { en: x[0], hi: x[0] };
+      return '<tr><td>' + esc(r[st.lang]) + '</td><td class="r num">' + N(x[1]) + ' (' + Math.round(x[1] / total * 100) + '%)</td><td class="bar-cell"><span class="b" style="width:' + Math.max(3, Math.round(x[1] / max * 100)) + '%;background:' + color + '"></span></td></tr>';
+    }).join('') + '</tbody></table>';
+  }
+  function recLink(r) {
+    var m = r[0];
+    if (m === 'EU' && r[6]) return '<a href="https://webgate.ec.europa.eu/rasff-window/screen/notification/' + esc(r[6]) + '" target="_blank" rel="noopener">RASFF ' + esc(r[6]) + '</a>';
+    return '<a href="' + SRC[m][1] + '" target="_blank" rel="noopener">' + esc(SRC[m][0]) + '</a>';
+  }
+  function recHtml(r, showCat) {
+    var reasons = r[2].map(function (k) { var x = D.reasons[D.reasonIdx[k]]; return esc(x ? x[st.lang] : k); }).join(', ');
+    var text = r[5];
+    return '<div class="rec"><div class="meta">' + mtag(r[0]) + '<span>' + esc(fdate(r[3])) + '</span>' + (showCat ? '<b style="color:var(--text)">' + esc(cname(r[1])) + '</b>' : '') + '</div><div>' + esc(text) + '</div>' +
+      '<div class="meta"><span>' + reasons + (r[0] === 'EU' && r[4] ? ' · ' + esc(T('risk_' + r[4])) : '') + '</span>' + recLink(r) + '</div></div>';
+  }
+  function newsHtml(n) {
+    var tags = n.m.map(function (m) { return esc(mname(m)); }).concat(n.c ? [esc(cname(n.c))] : []).join(' · ');
+    return '<div class="news">' + (n.a ? '<span class="flag">' + esc(T('flag')) + '</span>' : '') + '<a class="h" href="' + esc(n.u) + '" target="_blank" rel="noopener">' + esc(n.t) + '</a>' +
+      '<div class="meta"><span>' + esc(fdate(n.d)) + '</span>' + (n.s ? '<span>' + esc(n.s) + '</span>' : '') + (tags ? '<span>' + tags + '</span>' : '') + '</div></div>';
+  }
+
+  /* ---------- views */
+  function viewCheck() {
+    var id = st.cat, c = cat(id), mk = st.mk, inf = X.info[id], p3 = c.p3 && D.limits[c.p3];
+    var cn = X.cnt[id], n = mk === 'ALL' ? cn.total : cn[mk];
+    var rate = mk === 'EU' ? c.rateEU : mk === 'US' ? c.rateUS : mk === 'ALL' ? c.rateComb : null;
+    var rateTxt = rate == null ? '<span class="muted" style="font-weight:400">' + esc(T('f_na')) + '</span>' : F1(rate) + (mk === 'ALL' ? ' <span class="muted small" style="font-weight:400">' + esc(T('f_rate_basis')) + '</span>' : '');
+    var relNote = c.rel && (id === 'coriander' || mk !== 'US') ? '<p class="small" style="margin-top:8px"><b>' + esc(id === 'coriander' ? T('unreliable') : T('rel_note')) + ':</b> ' + esc(L(c.rel)) + '</p>' : '';
+    var html = '<h2>' + esc(T('check_title')) + '</h2>' +
+      '<section class="first"><div class="form"><div><label class="k" for="sel-cat">' + esc(T('lbl_product')) + '</label>' + catSelect('sel-cat', id, 'data-act="cat"', false) + '</div>' +
+      '<div><label class="k" for="sel-mk">' + esc(T('lbl_market')) + '</label>' + mktSelect('sel-mk', mk, 'data-act="mkt"', T('all_markets'), false) + '</div></div>' + docsBox() + '</section>';
+    html += '<section aria-live="polite"><div class="head"><h2>' + esc(cname(id)) + '</h2><span class="tier ' + inf.tier + '">' + esc(T('priority')) + ': ' + esc(T('tier_' + inf.tier)) + '</span></div>' +
+      '<dl class="facts"><dt>' + esc(T('f_rej')) + '</dt><dd class="num">' + N(n) + '</dd>' +
+      '<dt>' + esc(T('f_rank')) + '</dt><dd class="num">' + (inf.rc ? '#' + inf.rc + ' ' + esc(T('f_of')) + ' ' + X.active : '—') + '</dd>' +
+      '<dt>' + esc(T('f_rate')) + '</dt><dd class="num">' + rateTxt + '</dd></dl>' + relNote + '</section>';
+    if (cn.total === 0) html += '<section><p class="empty">' + esc(T('no_data')) + '</p></section>';
+    else {
+      html += '<section><h3>' + esc(T('dest_h')) + '</h3><table><tbody>' + MK.map(function (m) {
+        var v = cn[m], mxv = Math.max.apply(null, MK.map(function (k) { return cn[k]; }).concat([1]));
+        return '<tr class="click' + (m === mk ? ' sel' : '') + '" data-act="setmk" data-v="' + m + '"><td>' + mtag(m) + '</td><td class="r num">' + N(v) + '</td><td class="bar-cell"><span class="b" style="width:' + (v ? Math.max(3, Math.round(v / mxv * 100)) : 0) + '%;background:var(--m-' + m + ')"></span></td></tr>';
+      }).join('') + '</tbody></table></section>';
+      var agg = {}, shownTotal = 0, mks = mk === 'ALL' ? MK : [mk];
+      mks.forEach(function (m) { var r = X.reasons[id][m]; Object.keys(r).forEach(function (k) { agg[k] = (agg[k] || 0) + r[k]; }); shownTotal += cn[m]; });
+      if (shownTotal > 0) html += '<section><h3>' + esc(T('why_h')) + '</h3>' + reasonTable(agg, shownTotal, mk === 'ALL' ? 'var(--link)' : 'var(--m-' + mk + ')') + '</section>';
+      html += '<section><h3>' + esc(T('trend_h')) + '</h3>' + trendChart(id, mk) + '</section>';
+    }
+    if (p3) {
+      html += '<section><h3>' + esc(T('rules_h')) + '</h3><p style="margin-bottom:6px"><span class="muted">' + esc(T('hazard')) + ':</span> ' + esc(L(p3.hazard)) + '</p>' +
+        '<table><thead><tr><th>' + esc(T('market')) + '</th><th>' + esc(T('limit')) + '</th></tr></thead><tbody>' +
+        [['EU', 'rules_eu', p3.eu], ['US', 'rules_us', p3.us], [null, 'rules_in', p3.india]].map(function (r) { return '<tr><td style="white-space:nowrap">' + (r[0] ? mtag(r[0]).replace(esc(mname(r[0])), esc(T(r[1]))) : esc(T(r[1]))) + '</td><td>' + esc(L(r[2])) + '</td></tr>'; }).join('') + '</tbody></table>' +
+        '<p style="margin-top:10px"><b>' + esc(T('gap_' + p3.type)) + '</b></p><details><summary>' + esc(T('more_h')) + '</summary><div>' + esc(L(p3.finding)) + '</div></details></section>' +
+        '<section><h3>' + esc(T('todo_h')) + '</h3><ul>' + p3.fix.map(function (f) { return '<li>' + esc(L(f)) + '</li>'; }).join('') + '</ul></section>';
+    } else html += '<section><h3>' + esc(T('rules_h')) + '</h3><p class="muted">' + esc(T('no_limits')) + '</p></section>';
+    var nw = D.news.filter(function (x) { return x.c === id; }).slice(0, 3);
+    if (nw.length) html += '<section><h3>' + esc(T('news_h')) + '</h3>' + nw.map(newsHtml).join('') + '<p style="margin-top:6px"><button type="button" class="btn alt" data-act="newsfor">' + esc(T('all_news')) + '</button></p></section>';
+    var idx = D.cats.indexOf(c), al = D.alerts.filter(function (a) { return a.cats && a.cats.indexOf(c.fdaIdx != null ? c.fdaIdx : D.fdaMap[id]) >= 0; });
+    var recent = X.rowsBy[id].filter(function (r) { return mk === 'ALL' || r[0] === mk; });
+    html += '<section>' + (D.fdaMap[id] != null ? '<details><summary>' + esc(T('alerts_h')) + ' (' + al.length + ')</summary><div>' + (al.length ? al.map(function (a) { return '<div class="rec"><div class="meta"><b style="color:var(--text)">' + esc(a.n) + '</b></div><div>' + esc(a.t) + '</div><a class="small" href="' + esc(a.url) + '" target="_blank" rel="noopener">' + esc(T('al_link')) + '</a></div>'; }).join('') : '<p class="small muted">' + esc(T('no_alerts')) + '</p>') + '</div></details>' : '') +
+      '<details><summary>' + esc(T('recent_h')) + ' (' + N(recent.length) + ')</summary><div>' + recent.slice(0, 5).map(function (r) { return recHtml(r, false); }).join('') + (recent.length ? '<p style="margin-top:8px"><button type="button" class="btn alt" data-act="seerec">' + esc(T('all_records')(N(recent.length))) + '</button></p>' : '') + '</div></details></section>';
+    html += '<div class="row"><a class="btn" target="_blank" rel="noopener" href="https://wa.me/?text=' + encodeURIComponent(shareText(c, mk, n, rate, inf)) + '">' + esc(T('share_wa')) + '</a><button type="button" class="btn alt" data-act="copy">' + esc(T('copy')) + '</button></div>';
+    return html;
+  }
+  function shareText(c, mk, n, rate, inf) {
+    var p3 = c.p3 && D.limits[c.p3];
+    var lines = ['Clearance: ' + c[st.lang] + ' (' + (mk === 'ALL' ? T('all_markets') : mname(mk)) + ')', T('priority') + ': ' + T('tier_' + inf.tier) + ' · ' + T('f_rej') + ': ' + n + (rate != null ? ' · ' + T('f_rate') + ': ' + F1(rate) : '')];
+    if (p3) { lines.push(L(p3.hazard)); lines.push(T('rules_eu') + ': ' + L(p3.eu)); lines.push(T('rules_us') + ': ' + L(p3.us)); lines.push(T('rules_in') + ': ' + L(p3.india)); }
+    return lines.join('\n');
+  }
+  function viewRanking() {
+    var rank = { HIGH: 0, MEDIUM: 1, WATCH: 2, NONE: 3 }, s = st.sort;
+    var list = D.cats.filter(function (c) { return X.cnt[c.id].total > 0; }), empty = D.cats.filter(function (c) { return X.cnt[c.id].total === 0; });
+    function val(c) {
+      var i = X.info[c.id], cn = X.cnt[c.id];
+      switch (s.k) {
+        case 'name': return c[st.lang].toLowerCase();
+        case 'tier': return rank[i.tier] * 10000 - cn.total;
+        case 'total': return -cn.total;
+        case 'rate': return c.rateComb == null ? 1e9 : -c.rateComb;
+        default: return cn[s.k] != null ? -cn[s.k] : 0;
+      }
+    }
+    list.sort(function (a, b) { var x = val(a), y = val(b); return (x < y ? -1 : x > y ? 1 : 0) * s.dir || a[st.lang].localeCompare(b[st.lang]); });
+    function th(k, label, cls) { var on = s.k === k; return '<th class="' + (cls || '') + '"' + (on ? ' aria-sort="' + (s.dir > 0 ? 'ascending' : 'descending') + '"' : '') + '><button type="button" data-act="sort" data-v="' + k + '"' + (on ? ' data-dir="' + (s.dir > 0 ? '▲' : '▼') + '"' : '') + '>' + label + '</button></th>'; }
+    var rows = list.map(function (c) {
+      var i = X.info[c.id], cn = X.cnt[c.id], fa = D.fdaMap[c.id] != null ? D.alerts.filter(function (a) { return a.cats && a.cats.indexOf(D.fdaMap[c.id]) >= 0 || a.general; }).length : 0;
+      return '<tr class="click" data-act="open" data-v="' + c.id + '"><td><a href="#check" data-act="open" data-v="' + c.id + '">' + esc(c[st.lang]) + '</a></td><td style="white-space:nowrap"><span class="tier ' + i.tier + '">' + esc(T('tier_' + i.tier)) + '</span></td><td class="r num"><b>' + N(cn.total) + '</b></td>' +
+        MK.map(function (m) { return '<td class="r num">' + (cn[m] ? N(cn[m]) : '<span class="muted">·</span>') + '</td>'; }).join('') +
+        '<td class="r num">' + (c.rateComb != null ? F1(c.rateComb) + (c.id === 'coriander' ? ' *' : '') : '—') + '</td><td>' + esc(i.gap ? T('gapword_' + i.gap) : '—') + '</td></tr>';
+    }).join('');
+    return '<h2>' + esc(T('rank_title')) + '</h2><section class="first">' + docsBox() + '<div class="scroll"><table><thead><tr>' + th('name', esc(T('th_product'))) + th('tier', esc(T('th_tier'))) + th('total', esc(T('th_total')), 'r') +
+      MK.map(function (m) { return th(m, sw(m) + esc(mname(m)), 'r'); }).join('') + th('rate', esc(T('th_rate')), 'r') + '<th>' + esc(T('th_gap')) + '</th></tr></thead><tbody>' + rows + '</tbody></table></div>' +
+      '<p class="small muted" style="margin-top:8px">' + esc(T('rank_key')) + '</p>' +
+      (empty.length ? '<details><summary>' + esc(T('no_records_h')) + ' (' + empty.length + ')</summary><div>' + empty.map(function (c) { return '<a href="#check" data-act="open" data-v="' + c.id + '">' + esc(c[st.lang]) + '</a>'; }).join(' · ') + '</div></details>' : '') + '</section>' +
+      '<section><h3>' + esc(T('slope_h')) + '</h3>' + slopeChart() + '</section>';
+  }
+  function viewNews() {
+    var f = st.nf, items = D.news.filter(function (n) { return (!f.cat || n.c === f.cat) && (!f.mk || n.m.indexOf(f.mk) >= 0) && (!f.alerts || n.a); });
+    var ev = D.events.filter(function (e) { return (!f.cat || e.c === f.cat) && (!f.mk || (e.m || []).indexOf(f.mk) >= 0); }).sort(function (a, b) { return a.d < b.d ? 1 : -1; });
+    var html = '<h2>' + esc(T('news_title')) + '</h2><section class="first"><div class="filters">' +
+      '<div><label class="k" for="n-cat">' + esc(T('f_cat')) + '</label>' + catSelect('n-cat', f.cat, 'data-nf="cat"', true) + '</div>' +
+      '<div><label class="k" for="n-mk">' + esc(T('f_mkt')) + '</label>' + mktSelect('n-mk', f.mk, 'data-nf="mk"', T('f_any_market'), true) + '</div></div>' +
+      '<label class="chk"><input type="checkbox" data-nf="alerts"' + (f.alerts ? ' checked' : '') + '>' + esc(T('f_alerts')) + '</label>' +
+      (D.newsUpdated ? '<p class="small muted">' + esc(T('news_updated')) + ' ' + esc(fdate(D.newsUpdated.slice(0, 10))) + '</p>' : '') + '</section>';
+    if (ev.length) html += '<section><h3>' + esc(T('events_h')) + '</h3>' + ev.map(function (e) {
+      return '<div class="news"><span class="flag">' + esc(T('flag')) + '</span><a class="h" href="' + esc(e.u) + '" target="_blank" rel="noopener">' + esc(e.t) + '</a><div class="meta"><span>' + esc(fdate(e.d)) + '</span><span>' + esc(e.s) + '</span><span>' + (e.m || []).map(function (m) { return esc(mname(m)); }).join(' · ') + (e.c ? ' · ' + esc(cname(e.c)) : '') + '</span></div></div>';
+    }).join('') + '</section>';
+    html += '<section>' + (items.length ? items.slice(0, 120).map(newsHtml).join('') : '<p class="empty">' + esc(D.news.length ? T('news_empty') : T('news_none')) + '</p>') + '</section>';
+    return html;
+  }
+  function filteredRecords() {
+    var f = st.rf, q = f.q.trim().toLowerCase();
+    return D.rows.filter(function (r) {
+      if (f.cat && r[1] !== f.cat) return false;
+      if (f.mk && r[0] !== f.mk) return false;
+      if (f.reason && r[2].indexOf(f.reason) < 0) return false;
+      if (q && (r[5] + ' ' + r[7]).toLowerCase().indexOf(q) < 0 && cat(r[1]).en.toLowerCase().indexOf(q) < 0 && cat(r[1]).hi.indexOf(q) < 0) return false;
+      return true;
+    });
+  }
+  function recResults() {
+    var all = filteredRecords(), part = all.slice(0, st.shown);
+    if (!all.length) return '<p class="empty">' + esc(T('no_match')) + '</p>';
+    return '<div class="row" style="justify-content:space-between;align-items:center"><p class="small muted">' + esc(T('showing')(N(part.length), N(all.length))) + '</p><button type="button" class="btn alt" data-act="csv">' + esc(T('csv')) + '</button></div><div>' + part.map(function (r) { return recHtml(r, true); }).join('') + '</div>' +
+      (part.length < all.length ? '<p style="margin-top:10px"><button type="button" class="btn alt" data-act="more">' + esc(T('more')) + '</button></p>' : '');
+  }
+  function viewRecords() {
+    var f = st.rf;
+    var ro = '<option value="">' + esc(T('f_all')) + '</option>' + D.reasons.map(function (r) { return '<option value="' + r.id + '"' + (f.reason === r.id ? ' selected' : '') + '>' + esc(r[st.lang]) + '</option>'; }).join('');
+    return '<h2>' + esc(T('rec_title')) + '</h2><section class="first"><div class="filters">' +
+      '<div><label class="k" for="f-cat">' + esc(T('f_cat')) + '</label>' + catSelect('f-cat', f.cat, 'data-f="cat"', true) + '</div>' +
+      '<div><label class="k" for="f-mkt">' + esc(T('f_mkt')) + '</label>' + mktSelect('f-mkt', f.mk, 'data-f="mk"', T('f_any_market'), false).replace('value="ALL"', 'value=""') + '</div>' +
+      '<div><label class="k" for="f-reason">' + esc(T('f_reason')) + '</label><select id="f-reason" data-f="reason">' + ro + '</select></div>' +
+      '<div><label class="k" for="f-q">' + esc(T('f_search')) + '</label><input id="f-q" type="search" data-f="q" placeholder="' + esc(T('f_search_ph')) + '" value="' + esc(f.q) + '"></div></div></section>' +
+      '<section id="rec-results">' + recResults() + '</section>';
+  }
+  function alertCard(a) {
+    var tags = (a.cats || []).map(function (i) { return esc(D.fdaNames[i] ? short(D.catById[D.fdaNames[i]]) : ''); }).filter(Boolean).join(', ');
+    return '<div class="rec"><div class="meta"><b style="color:var(--text)">' + esc(a.n) + '</b>' + (tags ? '<span>' + tags + '</span>' : '') + '</div><div>' + esc(a.t) + '</div>' +
+      (a.why ? '<div class="small muted">' + esc(T('al_why')) + ': ' + esc(a.why) + '</div>' : '') + '<a class="small" href="' + esc(a.url) + '" target="_blank" rel="noopener">' + esc(T('al_link')) + '</a></div>';
+  }
+  function viewAlerts() {
+    var rel = D.alerts.filter(function (a) { return a.cats && a.cats.length; }), gen = D.alerts.filter(function (a) { return a.general; }), oth = D.alerts.filter(function (a) { return !(a.cats && a.cats.length) && !a.general; });
+    return '<h2>' + esc(T('al_title')) + '</h2><section class="first"><h3>' + esc(T('al_rel')) + ' (' + rel.length + ')</h3>' + rel.map(alertCard).join('') + '</section>' +
+      '<section><h3>' + esc(T('al_gen')) + ' (' + gen.length + ')</h3>' + gen.map(alertCard).join('') + '</section>' +
+      '<section><details><summary>' + esc(T('al_other')) + ' (' + oth.length + ')</summary><div>' + oth.map(function (a) { return '<div class="rec"><b>' + esc(a.n) + '</b> ' + esc(a.t) + '</div>'; }).join('') + '</div></details></section>';
+  }
+  function stateOf(h, isSeedOnly) {
+    if (!h || !h.status) return ['st-na', T(isSeedOnly ? 'st_snap' : 'st_none')];
+    if (h.status === 'ok') return ['st-ok', T('st_ok')];
+    if (h.status === 'needs_key') return ['st-na', T('st_key')];
+    return ['st-bad', T('st_bad')];
+  }
+  function viewSources() {
+    var rows = D.meta.markets.map(function (m) {
+      var seedOnly = (m.id === 'EU' || m.id === 'US') && !(m.health && m.health.status), s = stateOf(m.health, seedOnly);
+      return '<tr><td>' + mtag(m.id) + '</td><td><a href="' + SRC[m.id][1] + '" target="_blank" rel="noopener">' + esc(SRC[m.id][0]) + '</a></td><td class="num">' + (m.newest ? esc(fdate(m.newest)) : '—') + '</td><td class="num">' + (m.health && m.health.last_ok ? esc(m.health.last_ok.slice(0, 10)) : '—') + '</td><td class="' + s[0] + '">' + esc(s[1]) + '</td></tr>' +
+        (m.health && m.health.status === 'error' ? '<tr><td></td><td colspan="4" class="small muted">' + esc(m.health.error) + '</td></tr>' : '');
+    }).join('');
+    var nh = D.meta.news || {}, ns = stateOf(nh, false);
+    return '<h2>' + esc(T('src_title')) + '</h2><section class="first"><div class="scroll"><table style="min-width:560px"><thead><tr><th>' + esc(T('market')) + '</th><th>' + esc(T('th_src')) + '</th><th>' + esc(T('th_latest')) + '</th><th>' + esc(T('th_checked')) + '</th><th>' + esc(T('th_status')) + '</th></tr></thead><tbody>' + rows +
+      '<tr><td></td><td>' + esc(T('news_src')) + '</td><td class="num">' + (D.newsUpdated ? esc(fdate(D.newsUpdated.slice(0, 10))) : '—') + '</td><td class="num">' + (nh.last_ok ? esc(nh.last_ok.slice(0, 10)) : '—') + '</td><td class="' + ns[0] + '">' + esc(ns[1]) + '</td></tr></tbody></table></div></section>' +
+      '<section><h3>' + esc(T('counted_h')) + '</h3><ul>' + T('counted').map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></section>';
+  }
+
+  /* ---------- render */
+  function render() {
+    document.body.setAttribute('data-lang', st.lang); document.documentElement.lang = st.lang;
+    document.getElementById('tagline').textContent = T('tagline');
+    document.querySelectorAll('#langseg button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-v') === st.lang)); });
+    document.getElementById('tabs').innerHTML = TABS.map(function (k) { return '<button type="button" role="tab" data-act="tab" data-v="' + k + '" aria-selected="' + (k === st.tab) + '">' + esc(T('tab_' + k)) + '</button>'; }).join('');
+    var html = { check: viewCheck, ranking: viewRanking, news: viewNews, records: viewRecords, alerts: viewAlerts, sources: viewSources }[st.tab]();
+    document.getElementById('main').innerHTML = html;
+    var newest = ''; D.meta.markets.forEach(function (m) { if (m.newest > newest) newest = m.newest; });
+    document.getElementById('foot').textContent = T('disc') + (newest ? ' · ' + T('data_to') + ' ' + fdate(newest) : '');
+  }
+  function save() { try { localStorage.setItem('clearance.v2', JSON.stringify({ lang: st.lang, cat: st.cat, mk: st.mk, docs: st.docs })); } catch (e) {} }
+  function go(tab) { st.tab = tab; try { history.replaceState(null, '', '#' + tab); } catch (e) { location.hash = tab; } render(); window.scrollTo(0, 0); }
+
+  var tip = document.getElementById('tip');
+  function tipHandler(e) {
+    var el = e.target.closest && e.target.closest('[data-tip]');
+    if (!el) { tip.hidden = true; return; }
+    tip.textContent = el.getAttribute('data-tip'); tip.hidden = false;
+    var x = e.clientX + 12, y = e.clientY - 34, w = tip.offsetWidth; if (x + w > window.innerWidth - 8) x = window.innerWidth - w - 8;
+    tip.style.left = Math.max(8, x) + 'px'; tip.style.top = Math.max(8, y) + 'px';
+  }
+  document.addEventListener('pointermove', tipHandler); document.addEventListener('pointerdown', tipHandler);
+  document.addEventListener('scroll', function () { tip.hidden = true; }, true);
+
+  function csvDownload() {
+    var rows = filteredRecords(), out = ['destination,product,date,reasons,risk,description,reference'];
+    rows.forEach(function (r) { out.push([r[0], cat(r[1]).en, r[3], r[2].join(';'), r[4], r[5], r[6]].map(function (v) { return '"' + String(v).replace(/"/g, '""') + '"'; }).join(',')); });
+    var blob = new Blob(['﻿' + out.join('\n')], { type: 'text/csv;charset=utf-8' }), a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = 'clearance-records.csv'; document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  }
+
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest && e.target.closest('[data-act]'); if (!el) return;
+    var act = el.getAttribute('data-act'), v = el.getAttribute('data-v');
+    if (act === 'lang') { st.lang = v; save(); render(); }
+    else if (act === 'tab') go(v);
+    else if (act === 'open') { e.preventDefault(); st.cat = v; save(); go('check'); }
+    else if (act === 'setmk') { st.mk = v; save(); render(); }
+    else if (act === 'sort') { st.sort = st.sort.k === v ? { k: v, dir: -st.sort.dir } : { k: v, dir: 1 }; render(); }
+    else if (act === 'seerec') { st.rf = { cat: st.cat, mk: st.mk === 'ALL' ? '' : st.mk, reason: '', q: '' }; st.shown = 40; go('records'); }
+    else if (act === 'newsfor') { st.nf = { cat: st.cat, mk: '', alerts: false }; go('news'); }
+    else if (act === 'more') { st.shown += 40; document.getElementById('rec-results').innerHTML = recResults(); }
+    else if (act === 'csv') csvDownload();
+    else if (act === 'retry') init();
+    else if (act === 'copy') {
+      var c = cat(st.cat), inf = X.info[st.cat], cn = X.cnt[st.cat], mk = st.mk, n = mk === 'ALL' ? cn.total : cn[mk], rate = mk === 'EU' ? c.rateEU : mk === 'US' ? c.rateUS : mk === 'ALL' ? c.rateComb : null, txt = shareText(c, mk, n, rate, inf);
+      var done = function () { el.textContent = T('copied'); setTimeout(function () { el.textContent = T('copy'); }, 1600); };
+      var fb = function () { var ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); done(); } catch (er) {} document.body.removeChild(ta); };
+      try { navigator.clipboard.writeText(txt).then(done, fb); } catch (er) { fb(); }
+    }
+  });
+  document.addEventListener('change', function (e) {
+    var el = e.target, act = el.getAttribute && el.getAttribute('data-act');
+    if (act === 'cat') { st.cat = el.value; save(); render(); }
+    else if (act === 'mkt') { st.mk = el.value; save(); render(); }
+    else if (act === 'docs') { st.docs = el.checked; save(); recompute(); render(); }
+    var nf = el.getAttribute && el.getAttribute('data-nf');
+    if (nf) { st.nf[nf] = nf === 'alerts' ? el.checked : el.value; render(); }
+  });
+  function onFilter(e) { var k = e.target.getAttribute && e.target.getAttribute('data-f'); if (!k) return; st.rf[k] = e.target.value; st.shown = 40; document.getElementById('rec-results').innerHTML = recResults(); }
+  document.addEventListener('input', onFilter); document.addEventListener('change', onFilter);
+  window.addEventListener('hashchange', function () { var h = (location.hash || '').replace('#', ''); if (D && TABS.indexOf(h) >= 0 && h !== st.tab) { st.tab = h; render(); } });
+
+  /* ---------- start */
+  function firstCat() {
+    var best = null; D.cats.forEach(function (c) { var i = X.info[c.id]; if (i.rc && (!best || i.rc < X.info[best].rc)) best = c.id; }); return best || D.cats[0].id;
+  }
+  function init() {
+    document.getElementById('main').innerHTML = '<div class="loading">' + esc(T('loading')) + '</div>';
+    load().then(function () {
+      // FDA alert category indexes (workbook order) -> category ids
+      D.fdaNames = ['basmati', 'rice', 'shrimp', 'sesame', 'groundnut', 'pepper', 'chilli', 'coriander', 'cumin', 'turmeric', 'fenugreek', 'fennel', 'blends', 'mango', 'herbal'];
+      D.fdaMap = {}; D.fdaNames.forEach(function (id, i) { D.fdaMap[id] = i; });
+      recompute();
+      if (!st.cat || !D.catById[st.cat]) st.cat = firstCat();
+      render();
+    }).catch(function (err) {
+      document.getElementById('main').innerHTML = '<div class="empty"><p>' + esc(T('load_fail')) + '</p><p class="small">' + esc(err.message) + '</p><p style="margin-top:10px"><button type="button" class="btn" data-act="retry">' + esc(T('retry')) + '</button></p></div>';
+    });
+  }
+  try {
+    var sv = JSON.parse(localStorage.getItem('clearance.v2') || '{}');
+    if (sv.lang === 'hi' || sv.lang === 'en') st.lang = sv.lang; else if ((navigator.language || '').toLowerCase().indexOf('hi') === 0) st.lang = 'hi';
+    if (sv.cat) st.cat = sv.cat; if (sv.mk) st.mk = sv.mk; st.docs = !!sv.docs;
+  } catch (e) { if ((navigator.language || '').toLowerCase().indexOf('hi') === 0) st.lang = 'hi'; }
+  var h0 = (location.hash || '').replace('#', ''); if (TABS.indexOf(h0) >= 0) st.tab = h0;
+  window.CL = { compute: function (o) { return compute(o); }, data: function () { return D; } };
+  init();
+})();
+</script>
+</body>
+</html>
