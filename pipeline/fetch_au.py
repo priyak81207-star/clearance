@@ -1,4 +1,5 @@
-"""Australia DAFF - Imported Food Inspection Scheme monthly failing food reports (HTML tables)."""
+"""Australia DAFF - Imported Food Inspection Scheme monthly failing food reports (HTML tables).
+Live check 2026-10-17: the origin column is headed "County of origin" (sic), so match 'county' as well as 'country'."""
 import re, hashlib
 from html.parser import HTMLParser
 from common import http_text, parse_date, clean, is_india, since_date
@@ -53,7 +54,7 @@ def parse_page(html):
             for i, h in enumerate(head):
                 if any(k in h for k in keys): return i
             return None
-        ci, cp, cc, cr, cres = col('date'), col('product'), col('country'), col('test', 'reason'), col('result')
+        ci, cp, cc, cr, cres = col('date'), col('product'), col('country', 'county', 'origin'), col('test', 'reason'), col('result')
         if cp is None or cc is None: continue
         for row in t[1:]:
             if len(row) <= max(x for x in (ci, cp, cc, cr or 0) if x is not None): continue
@@ -71,7 +72,7 @@ def parse_page(html):
 
 def fetch():
     since = since_date('au')
-    lk = Links(); lk.feed(http_text(INDEX))
+    lk = Links(); lk.feed(http_text(INDEX, timeout=90))
     seen, recs, tried, ok = set(), [], 0, 0
     for h in lk.hrefs:
         url = h if h.startswith('http') else 'https://www.agriculture.gov.au' + h
@@ -81,7 +82,7 @@ def fetch():
         if not ym or ym < (since.year, since.month): continue
         tried += 1
         try:
-            recs += parse_page(http_text(url)); ok += 1
+            recs += parse_page(http_text(url, timeout=90)); ok += 1
         except Exception as e:
             print('au: skip', url, e)
     if tried and not ok:

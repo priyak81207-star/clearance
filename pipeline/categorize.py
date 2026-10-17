@@ -75,4 +75,8 @@ def reasons_from(*texts):
     # Pesticide wording often co-occurs with 'contaminat'; keep the specific cause only
     if 'pesticide' in out and 'filth' in out and not re.search(r'insect|filth|rodent|infest', t, re.I):
         out.remove('filth')
+    # 'Unauthorised' / 'not permitted' is generic RASFF wording ("Unauthorised pesticide ..."); it is only an
+    # additive problem when no other specific cause was found and no additive word is present
+    if 'additive' in out and len(out) > 1 and not re.search(r'additive|colou?r|dye|sudan|rhodamine|sulphite|sulfite|benzoate|sorbate|preservative|sweetener|flavour|添加物|着色|保存料|漂白', t, re.I):
+        out.remove('additive')
     return out[:3] or ['other']

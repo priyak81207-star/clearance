@@ -61,19 +61,24 @@ def sheets(raw, name):
             yield rows
 
 
-COLS = {'date': r'年月日|通知|処分|日付', 'product': r'品名|食品等', 'origin': r'原産国|輸出国|国名|生産国', 'law': r'違反条文|条文', 'content': r'違反内容|内容|理由', 'action': r'措置|処置'}
+COLS = {'date': r'年月日|公表日|通知|処分|日付', 'product': r'品名|食品等', 'origin': r'原産国|輸出国|国名|生産国', 'law': r'違反条文|条文', 'content': r'違反内容|内容|理由', 'action': r'措置|処置'}
+
+
+def squash(c):
+    """Header cells are padded with full-width spaces ('品　　名'); drop all white space before matching."""
+    return re.sub(r'\s+', '', str(c or ''))
 
 
 def parse_rows(rows):
     """Find the header row, map columns by Japanese keywords, return India rows."""
     hi = None
     for i, r in enumerate(rows[:40]):
-        txt = [str(c or '') for c in r]
+        txt = [squash(c) for c in r]
         if any(re.search(r'品名', t) for t in txt) and any(re.search(COLS['origin'], t) for t in txt):
             hi = i; break
     if hi is None:
         return None
-    head = [str(c or '') for c in rows[hi]]
+    head = [squash(c) for c in rows[hi]]
     idx = {}
     for k, rx in COLS.items():
         for j, h in enumerate(head):
