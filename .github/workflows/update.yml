@@ -1,0 +1,50 @@
+name: Update data and deploy
+
+on:
+  schedule:
+    - cron: '30 2 * * *'        # every day, 08:00 India time
+  workflow_dispatch:             # the "Run workflow" button
+  push:
+    branches: [main]
+    paths: ['site/**', 'pipeline/**', 'config/**', '.github/workflows/**']
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: clearance
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Self-test the data code
+        run: python -m unittest discover -s pipeline/tests
+      - name: Download new data and rebuild
+        run: python pipeline/run_all.py
+        env:
+          FDA_API_USER: ${{ secrets.FDA_API_USER }}
+          FDA_API_KEY: ${{ secrets.FDA_API_KEY }}
+      - name: Save the new data in the repository
+        run: |
+          git config user.name "clearance-bot"
+          git config user.email "clearance-bot@users.noreply.github.com"
+          git add -A data site/data
+          git diff --cached --quiet || (git commit -m "Update data $(date -u +%F)" && git push)
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4
