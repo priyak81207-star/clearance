@@ -10,6 +10,14 @@ class E2E(unittest.TestCase):
         tmp = tempfile.mkdtemp()
         proj = os.path.join(tmp, 'p')
         shutil.copytree(ROOT, proj, ignore=shutil.ignore_patterns('__pycache__', '.git'))
+        # The repository now holds real downloaded data committed by the daily job. Keep only the frozen seed,
+        # so the test starts from the same state every time.
+        src = os.path.join(proj, 'data', 'src')
+        for f in os.listdir(src):
+            if f != 'seed.json':
+                os.remove(os.path.join(src, f))
+        if os.path.exists(os.path.join(proj, 'data', 'health.json')):
+            os.remove(os.path.join(proj, 'data', 'health.json'))
         sys.path.insert(0, os.path.join(proj, 'pipeline'))
         for m in [m for m in list(sys.modules) if m in ('common', 'build', 'run_all', 'categorize') or m.startswith('fetch_')]:
             del sys.modules[m]
