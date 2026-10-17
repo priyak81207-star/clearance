@@ -13,8 +13,15 @@ AU_HTML = """<table><tr><th>Date of fail</th><th>Product description</th><th>Cou
 <tr><td>3/10/2025</td><td>Poha (flattened rice)</td><td>India</td><td>X Ltd</td><td>Arsenic (total)</td><td>21 mg/kg</td></tr>
 <tr><td>3/10/2025</td><td>Fresh lychee</td><td>China</td><td>Y</td><td>Cypermethrin</td><td>0.1</td></tr></table>"""
 RASFF = {"notifications": [
-    {"notifId": 869134, "reference": "2026.1", "subject": "Ethylene oxide in sesame seeds from India", "ecValidationDate": "2026-09-02T10:00:00", "riskDecision": "serious", "hazards": [{"hazard": "ethylene oxide"}]},
-    {"notifId": 869135, "reference": "2026.2", "subject": "Salmonella in tahini from Lebanon", "ecValidationDate": "2026-09-02T10:00:00"}], "totalNotifications": 2}
+    {"notifId": 869134, "reference": "2026.1", "subject": "Ethylene oxide in sesame seeds from India", "ecValidationDate": "02-09-2026 10:00:00",
+     "notificationClassification": {"id": 305, "description": "border rejection notification"}, "riskDecision": {"id": 1, "description": "serious"},
+     "productCategory": {"id": 2, "description": "nuts, nut products and seeds"}, "originCountries": [{"organizationName": "India", "isoCode": "IN"}]},
+    {"notifId": 869136, "reference": "2026.3", "subject": "Salmonella in cumin from India", "ecValidationDate": "02-09-2026 11:00:00",
+     "notificationClassification": {"id": 301, "description": "alert notification"}, "riskDecision": {"id": 1, "description": "serious"},
+     "originCountries": [{"organizationName": "India", "isoCode": "IN"}]},
+    {"notifId": 869135, "reference": "2026.2", "subject": "Salmonella in tahini from Lebanon", "ecValidationDate": "02-09-2026 10:00:00",
+     "notificationClassification": {"id": 305, "description": "border rejection notification"},
+     "originCountries": [{"organizationName": "Lebanon", "isoCode": "LB"}]}], "totalPages": 1, "totalElements": 3}
 FDA_ROW = {"IndustryCode": 28, "RefusalDate": "2026-09-03", "ProductCodeDescription": "Cumin seed, whole", "RefusalCharges": "FILTHY, SALMONELLA", "ShipmentID": "ABC-123-4", "FEINumber": 1}
 RSS = b"""<rss><channel><item><title>FDA detains Indian cumin over salmonella - Reuters</title><link>http://x/1</link><pubDate>Mon, 05 Oct 2026 08:00:00 GMT</pubDate><source>Reuters</source></item></channel></rss>"""
 
@@ -65,6 +72,29 @@ class T(unittest.TestCase):
         self.assertEqual(len(recs), 1)
         self.assertEqual(recs[0]['risk'], 1)
         self.assertEqual(recs[0]['ref'], '869134')
+        self.assertEqual(recs[0]['date'], '2026-09-02')       # dd-mm-yyyy as sent by the live site
+        self.assertEqual(recs[0]['pcat'], 'nuts, nut products and seeds')
+
+    def test_jp_live_layout(self):
+        # layout seen on the live MHLW file (2026-10-17): title row, then header with full-width-space padding
+        import datetime as dt
+        rows = [['輸入食品等の食品衛生法違反事例\n（2026年度分）'] + [None] * 11,
+                ['品\u3000\u3000名', '条文', '製造者', 'シッパー', '生産国', '不適格内容', '担当検疫所', '輸入者名', '原因', '措置状況', '備考', '公表日'],
+                ['ターメリック粉', '第13条第２項', 'X', '', 'インド', '成分規格不適合（アフラトキシン）', '横浜', 'Y', None, '廃棄', '自主検査', dt.datetime(2026, 4, 6)],
+                ['揚げ豆類', '第13条第２項', 'Z', '', 'ミャンマー', '使用基準不適合', '成田空港', 'W', None, '廃棄', '自主検査', dt.datetime(2026, 4, 6)]]
+        r = fetch_jp.parse_rows(rows)
+        self.assertEqual(len(r), 1)
+        self.assertEqual(r[0]['date'], '2026-04-06')
+        self.assertEqual(categorize(r[0]['product']), 'turmeric')
+
+    def test_au_live_header(self):
+        html = ("<table><tr><th>Date of fail</th><th>Product description</th><th>County of origin</th><th>Producer Name</th>"
+                "<th>Test applied / reason for fail</th><th>Results / Units</th><th>Reference criteria</th><th>Food category</th></tr>"
+                "<tr><td>7/08/2026</td><td>Tapioca chips</td><td>India</td><td>M/S. X</td><td>Hydrocyanic acid detected in excess</td><td>110 mg/kg</td><td>FSC 1.4.1</td><td>Risk</td></tr>"
+                "<tr><td>6/08/2026</td><td>Cooked prawn meat</td><td>Vietnam</td><td>Y</td><td>Fluoroquinolones</td><td>0.002</td><td>FSC 1.4.2</td><td>Risk</td></tr></table>")
+        r = fetch_au.parse_page(html)
+        self.assertEqual(len(r), 1)
+        self.assertEqual(r[0]['date'], '2026-08-07')
 
     def test_news(self):
         it = fetch_news.parse_feed(RSS)[0]
