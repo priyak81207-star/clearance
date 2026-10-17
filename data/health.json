@@ -1,0 +1,39 @@
+{
+ "eu": {
+  "status": "ok",
+  "last_ok": "2026-10-17 08:06",
+  "fetched": 349,
+  "added": 349,
+  "error": ""
+ },
+ "us": {
+  "status": "needs_key",
+  "error": "FDA_API_USER / FDA_API_KEY not set"
+ },
+ "uk": {
+  "status": "ok",
+  "last_ok": "2026-10-17 08:06",
+  "fetched": 444,
+  "added": 442,
+  "error": ""
+ },
+ "au": {
+  "status": "error",
+  "error": "https://www.agriculture.gov.au/biosecurity-trade/import/goods/food/inspection-testing/failing-food-reports: The read operation timed out"
+ },
+ "jp": {
+  "status": "ok",
+  "last_ok": "2026-10-17 08:11",
+  "fetched": 149,
+  "added": 95,
+  "error": ""
+ },
+ "news": {
+  "status": "ok",
+  "last_ok": "2026-10-17 08:11",
+  "feeds_ok": 17,
+  "feeds": 17,
+  "items": 58,
+  "error": ""
+ }
+}
