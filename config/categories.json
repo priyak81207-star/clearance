@@ -1,0 +1,582 @@
+{
+ "groups": [
+  {
+   "id": "spices",
+   "en": "Spices",
+   "hi": "मसाले"
+  },
+  {
+   "id": "grains",
+   "en": "Rice, grains & pulses",
+   "hi": "चावल, अनाज और दालें"
+  },
+  {
+   "id": "seafood",
+   "en": "Seafood",
+   "hi": "समुद्री भोजन"
+  },
+  {
+   "id": "fruitveg",
+   "en": "Fruit & vegetables",
+   "hi": "फल और सब्ज़ियाँ"
+  },
+  {
+   "id": "nuts",
+   "en": "Nuts & seeds",
+   "hi": "मेवे और बीज"
+  },
+  {
+   "id": "other",
+   "en": "Other food",
+   "hi": "अन्य खाद्य"
+  }
+ ],
+ "categories": [
+  {
+   "id": "basmati",
+   "en": "Basmati rice",
+   "hi": "बासमती चावल",
+   "group": "grains",
+   "p3": "rice",
+   "trade": {
+    "us": {
+     "raw": 149.0,
+     "ann": 74.5,
+     "val": 337.1,
+     "qty": 274213.14,
+     "rate": 22.10026698
+    },
+    "eu": {
+     "raw": 30.0,
+     "ann": 15,
+     "val": 236.85,
+     "qty": 228878.16,
+     "rate": 6.333122229
+    }
+   },
+   "rel": null,
+   "gap": "mismatch"
+  },
+  {
+   "id": "rice",
+   "en": "Rice (other)",
+   "hi": "चावल (अन्य)",
+   "group": "grains",
+   "p3": "rice",
+   "trade": {
+    "us": {
+     "raw": 65.0,
+     "ann": 32.5,
+     "val": 54.64,
+     "qty": 61341.54,
+     "rate": 59.48023426
+    },
+    "eu": {
+     "raw": 62.0,
+     "ann": 31,
+     "val": 45.19,
+     "qty": 75224.47,
+     "rate": 68.59924762
+    }
+   },
+   "rel": null,
+   "gap": "mismatch"
+  },
+  {
+   "id": "shrimp",
+   "en": "Shrimp & prawns",
+   "hi": "झींगा (श्रिम्प)",
+   "group": "seafood",
+   "p3": "shrimp",
+   "trade": {
+    "us": {
+     "raw": 114.0,
+     "ann": 57,
+     "val": 2515.09,
+     "qty": 311948.0,
+     "rate": 2.26632049
+    },
+    "eu": {
+     "raw": 25.0,
+     "ann": 12.5,
+     "val": null,
+     "qty": 99310.0,
+     "rate": null
+    }
+   },
+   "rel": {
+    "en": "Partial: EU export value is not available (only total seafood quantity).",
+    "hi": "आंशिक: EU निर्यात मूल्य उपलब्ध नहीं (सिर्फ़ कुल सीफ़ूड मात्रा)।"
+   },
+   "gap": "enforcement"
+  },
+  {
+   "id": "sesame",
+   "en": "Sesame seeds",
+   "hi": "तिल",
+   "group": "nuts",
+   "p3": "eto",
+   "trade": {
+    "us": {
+     "raw": 40.0,
+     "ann": 20,
+     "val": 44.36,
+     "qty": 19949.23,
+     "rate": 45.08566276
+    },
+    "eu": {
+     "raw": 45.0,
+     "ann": 22.5,
+     "val": 77.67,
+     "qty": 36824.38,
+     "rate": 28.96871379
+    }
+   },
+   "rel": null,
+   "gap": "mismatch"
+  },
+  {
+   "id": "groundnut",
+   "en": "Groundnuts / peanuts",
+   "hi": "मूंगफली",
+   "group": "nuts",
+   "p3": "groundnut",
+   "trade": {
+    "us": {
+     "raw": 27.0,
+     "ann": 13.5,
+     "val": 3.65,
+     "qty": 1977.62,
+     "rate": 369.8630137
+    },
+    "eu": {
+     "raw": 19.0,
+     "ann": 9.5,
+     "val": 45.04,
+     "qty": 11460.96,
+     "rate": 21.09236234
+    }
+   },
+   "rel": null,
+   "gap": "mismatch"
+  },
+  {
+   "id": "pepper",
+   "en": "Black pepper",
+   "hi": "काली मिर्च",
+   "group": "spices",
+   "p3": "pepper",
+   "trade": {
+    "us": {
+     "raw": 104.0,
+     "ann": 52,
+     "val": 50.94,
+     "qty": 8049.0,
+     "rate": 102.0808795
+    },
+    "eu": {
+     "raw": 4.0,
+     "ann": 2,
+     "val": 21.6,
+     "qty": 2944.0,
+     "rate": 9.259259259
+    }
+   },
+   "rel": null,
+   "gap": "mismatch"
+  },
+  {
+   "id": "chilli",
+   "en": "Chilli / capsicum",
+   "hi": "मिर्च / शिमला मिर्च",
+   "group": "spices",
+   "p3": "chilli",
+   "trade": {
+    "us": {
+     "raw": 95.0,
+     "ann": 47.5,
+     "val": 132.67,
+     "qty": 39466.0,
+     "rate": 35.80312052
+    },
+    "eu": {
+     "raw": 11.0,
+     "ann": 5.5,
+     "val": 24.09,
+     "qty": 4903.0,
+     "rate": 22.83105023
+    }
+   },
+   "rel": null,
+   "gap": "mismatch"
+  },
+  {
+   "id": "coriander",
+   "en": "Coriander",
+   "hi": "धनिया",
+   "group": "spices",
+   "p3": "coriander",
+   "trade": {
+    "us": {
+     "raw": 47.0,
+     "ann": 23.5,
+     "val": 6.76,
+     "qty": 3307.0,
+     "rate": 347.6331361
+    },
+    "eu": {
+     "raw": 6.0,
+     "ann": 3,
+     "val": 0.91,
+     "qty": 391.0,
+     "rate": 329.6703297
+    }
+   },
+   "rel": {
+    "en": "Low: the EU trade figure covers only one country (Netherlands), so the EU rate is badly overstated.",
+    "hi": "कम: EU व्यापार आँकड़ा सिर्फ़ एक देश (नीदरलैंड) का है, इसलिए EU दर बहुत बढ़ी हुई है।"
+   },
+   "gap": "mismatch"
+  },
+  {
+   "id": "cumin",
+   "en": "Cumin",
+   "hi": "जीरा",
+   "group": "spices",
+   "p3": "cumin",
+   "trade": {
+    "us": {
+     "raw": 38.0,
+     "ann": 19,
+     "val": 67.35,
+     "qty": 17384.0,
+     "rate": 28.2108389
+    },
+    "eu": {
+     "raw": 70.0,
+     "ann": 35,
+     "val": 40.75,
+     "qty": 8535.0,
+     "rate": 85.88957055
+    }
+   },
+   "rel": null,
+   "gap": "mismatch"
+  },
+  {
+   "id": "turmeric",
+   "en": "Turmeric",
+   "hi": "हल्दी",
+   "group": "spices",
+   "p3": "turmeric",
+   "trade": {
+    "us": {
+     "raw": 24.0,
+     "ann": 12,
+     "val": 26.28,
+     "qty": 8536.0,
+     "rate": 45.66210046
+    },
+    "eu": {
+     "raw": 13.0,
+     "ann": 6.5,
+     "val": 29.32,
+     "qty": 11216.0,
+     "rate": 22.1691678
+    }
+   },
+   "rel": null,
+   "gap": "mismatch"
+  },
+  {
+   "id": "fenugreek",
+   "en": "Fenugreek",
+   "hi": "मेथी",
+   "group": "spices",
+   "p3": "fenugreek",
+   "trade": {
+    "us": {
+     "raw": 16.0,
+     "ann": 8,
+     "val": 2.81,
+     "qty": 1371.0,
+     "rate": 284.6975089
+    },
+    "eu": {
+     "raw": 8.0,
+     "ann": 4,
+     "val": 3.38,
+     "qty": 2758.0,
+     "rate": 118.3431953
+    }
+   },
+   "rel": null,
+   "gap": "mismatch"
+  },
+  {
+   "id": "fennel",
+   "en": "Fennel",
+   "hi": "सौंफ",
+   "group": "spices",
+   "p3": "fennel",
+   "trade": {
+    "us": {
+     "raw": 39.0,
+     "ann": 19.5,
+     "val": 7.26,
+     "qty": 2420.0,
+     "rate": 268.5950413
+    },
+    "eu": {
+     "raw": 2.0,
+     "ann": 1,
+     "val": null,
+     "qty": null,
+     "rate": null
+    }
+   },
+   "rel": {
+    "en": "No EU rate: no EU country appears in the source data.",
+    "hi": "EU दर नहीं: स्रोत डेटा में कोई EU देश नहीं दिखता।"
+   },
+   "gap": "mismatch"
+  },
+  {
+   "id": "blends",
+   "en": "Spice blends",
+   "hi": "मसाला मिश्रण",
+   "group": "spices",
+   "p3": "eto",
+   "trade": {
+    "us": null,
+    "eu": null
+   },
+   "rel": {
+    "en": "No trade data found for this category.",
+    "hi": "इस श्रेणी का कोई व्यापार डेटा नहीं मिला।"
+   },
+   "gap": "mismatch"
+  },
+  {
+   "id": "mango",
+   "en": "Mango",
+   "hi": "आम",
+   "group": "fruitveg",
+   "p3": "mango",
+   "trade": {
+    "us": {
+     "raw": 71.0,
+     "ann": 35.5,
+     "val": 24.63,
+     "qty": 9860.88,
+     "rate": 144.1331709
+    },
+    "eu": {
+     "raw": 1.0,
+     "ann": 0.5,
+     "val": 16.2,
+     "qty": 10357.87,
+     "rate": 3.086419753
+    }
+   },
+   "rel": null,
+   "gap": "mismatch"
+  },
+  {
+   "id": "herbal",
+   "en": "Herbal / botanical supplements",
+   "hi": "हर्बल / वनस्पति सप्लीमेंट",
+   "group": "other",
+   "p3": "herbal",
+   "trade": {
+    "us": null,
+    "eu": null
+   },
+   "rel": {
+    "en": "No trade data found for this category.",
+    "hi": "इस श्रेणी का कोई व्यापार डेटा नहीं मिला।"
+   },
+   "gap": "norule"
+  },
+  {
+   "id": "spices_other",
+   "en": "Other spices (ginger, cardamom, cloves…)",
+   "hi": "अन्य मसाले (अदरक, इलायची, लौंग…)",
+   "group": "spices",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  },
+  {
+   "id": "wheat",
+   "en": "Wheat, flour & millets",
+   "hi": "गेहूँ, आटा और मोटे अनाज",
+   "group": "grains",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  },
+  {
+   "id": "pulses",
+   "en": "Pulses & lentils",
+   "hi": "दालें",
+   "group": "grains",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  },
+  {
+   "id": "fish",
+   "en": "Fish & other seafood",
+   "hi": "मछली और अन्य समुद्री भोजन",
+   "group": "seafood",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  },
+  {
+   "id": "veg",
+   "en": "Vegetables (okra, gourds, leaves…)",
+   "hi": "सब्ज़ियाँ (भिंडी, लौकी, पत्ते…)",
+   "group": "fruitveg",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  },
+  {
+   "id": "fruit_other",
+   "en": "Other fresh fruit",
+   "hi": "अन्य ताज़े फल",
+   "group": "fruitveg",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  },
+  {
+   "id": "processed_fv",
+   "en": "Pickles & processed fruit/veg",
+   "hi": "अचार और प्रसंस्कृत फल/सब्ज़ी",
+   "group": "fruitveg",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  },
+  {
+   "id": "cashew",
+   "en": "Cashew",
+   "hi": "काजू",
+   "group": "nuts",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  },
+  {
+   "id": "nuts_other",
+   "en": "Other nuts & seeds",
+   "hi": "अन्य मेवे और बीज",
+   "group": "nuts",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  },
+  {
+   "id": "tea",
+   "en": "Tea",
+   "hi": "चाय",
+   "group": "other",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  },
+  {
+   "id": "coffee",
+   "en": "Coffee",
+   "hi": "कॉफ़ी",
+   "group": "other",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  },
+  {
+   "id": "dairy",
+   "en": "Dairy & ghee",
+   "hi": "डेयरी और घी",
+   "group": "other",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  },
+  {
+   "id": "snacks",
+   "en": "Snacks, bakery & ready foods",
+   "hi": "स्नैक्स, बेकरी और तैयार भोजन",
+   "group": "other",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  },
+  {
+   "id": "beverages",
+   "en": "Beverages & juices",
+   "hi": "पेय और जूस",
+   "group": "other",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  },
+  {
+   "id": "oils_sugar",
+   "en": "Edible oil, sugar & jaggery",
+   "hi": "खाद्य तेल, चीनी और गुड़",
+   "group": "other",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  },
+  {
+   "id": "honey",
+   "en": "Honey",
+   "hi": "शहद",
+   "group": "other",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  },
+  {
+   "id": "meat",
+   "en": "Meat, poultry & eggs",
+   "hi": "मांस, पोल्ट्री और अंडे",
+   "group": "other",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  },
+  {
+   "id": "food_other",
+   "en": "Other food",
+   "hi": "अन्य खाद्य",
+   "group": "other",
+   "p3": null,
+   "trade": {},
+   "rel": null,
+   "gap": null
+  }
+ ]
+}
