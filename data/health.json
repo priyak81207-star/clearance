@@ -1,20 +1,20 @@
 {
  "eu": {
   "status": "ok",
-  "last_ok": "2026-10-17 08:06",
-  "fetched": 349,
-  "added": 349,
+  "last_ok": "2026-10-17 10:21",
+  "fetched": 12,
+  "added": 0,
   "error": ""
  },
  "us": {
-  "status": "needs_key",
-  "error": "FDA_API_USER / FDA_API_KEY not set"
+  "status": "error",
+  "error": "FDA API: 400 Success."
  },
  "uk": {
   "status": "ok",
-  "last_ok": "2026-10-17 08:06",
-  "fetched": 444,
-  "added": 442,
+  "last_ok": "2026-10-17 10:21",
+  "fetched": 70,
+  "added": 30,
   "error": ""
  },
  "au": {
@@ -23,14 +23,14 @@
  },
  "jp": {
   "status": "ok",
-  "last_ok": "2026-10-17 08:11",
-  "fetched": 149,
-  "added": 95,
+  "last_ok": "2026-10-17 10:26",
+  "fetched": 10,
+  "added": 0,
   "error": ""
  },
  "news": {
   "status": "ok",
-  "last_ok": "2026-10-17 08:11",
+  "last_ok": "2026-10-17 10:26",
   "feeds_ok": 17,
   "feeds": 17,
   "items": 58,
