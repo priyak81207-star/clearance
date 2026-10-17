@@ -7,6 +7,11 @@ FOOD_INDUSTRY_MAX = 41           # FDA industry codes 02-41 are food; 54 = vitam
 EXTRA_INDUSTRY = {54}
 
 
+# The FDA documentation lists status 400 with the message "Success." as its success code (checked 17 Oct 2026);
+# 401 = not authorised, 412 = no results, 413/414 = invalid filter name/value, 415 = more than 5000 rows.
+OK_CODES = {'400', '200', 'None'}
+
+
 class NoKey(Exception):
     pass
 
@@ -41,8 +46,11 @@ def fetch():
         body = {'columns': [], 'filters': {'CountryCode': ['IN'], 'RefusalDateFrom': [since]},
                 'sort': 'RefusalDate', 'sortorder': 'desc', 'start': start, 'rows': page}
         resp = json.loads(http(URL, data=json.dumps(body).encode(), headers=headers, timeout=120))
-        if resp.get('statuscode') not in (200, '200', None):
-            raise RuntimeError(f"FDA API: {resp.get('statuscode')} {resp.get('message')}")
+        code = str(resp.get('statuscode'))
+        if code == '412':                                  # "No results found" is a normal answer
+            break
+        if code not in OK_CODES:
+            raise RuntimeError(f"FDA API: {code} {resp.get('message')} {resp.get('invalid_filters') or resp.get('invalid_columns') or ''}".strip())
         rows = resp.get('result') or []
         for r in rows:
             rec = row_to_record(r)
