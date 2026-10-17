@@ -66,6 +66,24 @@ class T(unittest.TestCase):
         self.assertIn('microbial', reasons_from(r['hazard']))
         self.assertIsNone(fetch_fda.row_to_record({**FDA_ROW, 'IndustryCode': 60}))
 
+    def test_fda_status_codes(self):
+        """FDA reports success as statuscode 400 'Success.' (live check 17 Oct 2026); 412 = no results; 401 = bad key."""
+        import json, os
+        real_http = fetch_fda.http
+        os.environ['FDA_API_USER'], os.environ['FDA_API_KEY'] = 'u@example.org', 'test-key'
+        try:
+            reply = lambda d: (lambda *a, **k: json.dumps(d).encode())
+            fetch_fda.http = reply({'statuscode': 400, 'message': 'Success.', 'resultcount': 1, 'result': [FDA_ROW]})
+            self.assertEqual(len(fetch_fda.fetch()), 1)
+            fetch_fda.http = reply({'statuscode': 412, 'message': 'No results found.'})
+            self.assertEqual(fetch_fda.fetch(), [])
+            fetch_fda.http = reply({'statuscode': 401, 'message': 'Not Authorized.'})
+            with self.assertRaises(RuntimeError):
+                fetch_fda.fetch()
+        finally:
+            fetch_fda.http = real_http
+            os.environ.pop('FDA_API_USER', None); os.environ.pop('FDA_API_KEY', None)
+
     def test_rasff(self):
         items = fetch_rasff.find_list(RASFF)
         recs = [x for x in (fetch_rasff.to_record(i) for i in items) if x]
