@@ -1,0 +1,451 @@
+{
+ "groundnut": {
+  "type": "mismatch",
+  "hazard": {
+   "en": "Aflatoxin (B1 / total)",
+   "hi": "अफ्लाटॉक्सिन (B1 / कुल)"
+  },
+  "eu": {
+   "en": "B1 2 / total 4 µg/kg for direct eating. B1 8 / total 15 µg/kg if sorted before eating.",
+   "hi": "सीधे खाने के लिए B1 2 / कुल 4 µg/kg। खाने से पहले छंटाई हो तो B1 8 / कुल 15 µg/kg।"
+  },
+  "us": {
+   "en": "20 µg/kg total (FDA action level). Raw lots up to 25 µg/kg may go to a plant that sorts out bad kernels.",
+   "hi": "कुल 20 µg/kg (FDA कार्रवाई स्तर)। कच्चे लॉट 25 µg/kg तक उस प्लांट में जा सकते हैं जो खराब दाने छाँटता है।"
+  },
+  "india": {
+   "en": "B1 10 / total 15 µg/kg (oilseeds, includes groundnut)",
+   "hi": "B1 10 / कुल 15 µg/kg (तिलहन, मूंगफली सहित)"
+  },
+  "finding": {
+   "en": "India's limit (15 total) is about 4 times looser than the EU's strictest tier (4 total). A lot that passes FSSAI can still fail an EU test.",
+   "hi": "भारत की सीमा (कुल 15) EU के सबसे सख्त स्तर (कुल 4) से लगभग 4 गुना ढीली है। FSSAI पास करने वाला लॉट भी EU जाँच में फेल हो सकता है।"
+  },
+  "fix": [
+   {
+    "en": "Test every lot for aflatoxin B1 and total (HPLC or ELISA, NABL-accredited lab) before shipping.",
+    "hi": "शिपमेंट से पहले हर लॉट की अफ्लाटॉक्सिन B1 और कुल जाँच कराएँ (HPLC या ELISA, NABL-मान्यता प्राप्त लैब)।"
+   },
+   {
+    "en": "For EU retail buyers, sort and colour-sort to the EU direct-eating tier (2 / 4), not to the Indian oilseed tier.",
+    "hi": "EU रिटेल खरीदार के लिए EU की सीधे-खाने वाली सीमा (2 / 4) के हिसाब से छँटाई करें, भारतीय तिलहन सीमा के हिसाब से नहीं।"
+   },
+   {
+    "en": "Ask the supplier for a per-lot test certificate, not a general farm declaration.",
+    "hi": "सप्लायर से हर लॉट का टेस्ट सर्टिफिकेट माँगें, सिर्फ़ खेत की सामान्य घोषणा नहीं।"
+   }
+  ]
+ },
+ "rice": {
+  "type": "mismatch",
+  "hazard": {
+   "en": "Tricyclazole (fungicide used against rice blast)",
+   "hi": "ट्राइसाइक्लाज़ोल (धान के ब्लास्ट रोग का फफूंदनाशक)"
+  },
+  "eu": {
+   "en": "Not an approved substance. Enforced at about 0.01 mg/kg, so almost any detectable residue is a violation.",
+   "hi": "अनुमोदित पदार्थ नहीं। लगभग 0.01 मिग्रा/किग्रा पर लागू, इसलिए पता चलने वाला लगभग हर अवशेष उल्लंघन है।"
+  },
+  "us": {
+   "en": "3 mg/kg on rice grain",
+   "hi": "चावल के दाने पर 3 मिग्रा/किग्रा"
+  },
+  "india": {
+   "en": "3 mg/kg on rice (same as the US)",
+   "hi": "चावल पर 3 मिग्रा/किग्रा (अमेरिका जितनी)"
+  },
+  "finding": {
+   "en": "India and the US allow about 3 mg/kg, but the EU has never approved this fungicide. This is the cleanest EU-versus-the-rest gap in the data and likely explains most of the 92 EU rice rejections.",
+   "hi": "भारत और अमेरिका लगभग 3 मिग्रा/किग्रा की अनुमति देते हैं, लेकिन EU ने इस फफूंदनाशक को कभी मंजूरी नहीं दी। यह डेटा में EU बनाम बाकी का सबसे साफ़ अंतर है और EU में चावल के 92 रिजेक्शन की संभावित वजह है।"
+  },
+  "fix": [
+   {
+    "en": "For EU-bound lots, confirm with the farm or aggregator that tricyclazole was not used this season.",
+    "hi": "EU-बाउंड लॉट के लिए खेत या एग्रीगेटर से पक्का करें कि इस सीज़न ट्राइसाइक्लाज़ोल नहीं डाला गया।"
+   },
+   {
+    "en": "Screen residues before shipping (GC-MS / LC-MS, EU-recognised lab) with a target of 0.01 mg/kg or lower, not India's 3 mg/kg.",
+    "hi": "शिपमेंट से पहले अवशेष जाँच कराएँ (GC-MS / LC-MS, EU-मान्य लैब), लक्ष्य 0.01 मिग्रा/किग्रा या कम, भारत का 3 मिग्रा/किग्रा नहीं।"
+   },
+   {
+    "en": "For US-bound lots the 3 mg/kg limit is workable, so standard testing is enough.",
+    "hi": "US-बाउंड लॉट के लिए 3 मिग्रा/किग्रा की सीमा चलती है, इसलिए सामान्य जाँच काफ़ी है।"
+   }
+  ]
+ },
+ "eto": {
+  "type": "mismatch",
+  "hazard": {
+   "en": "Ethylene oxide (fumigant, measured with 2-chloroethanol)",
+   "hi": "एथिलीन ऑक्साइड (धूमन रसायन, 2-क्लोरोएथेनॉल के साथ मापा जाता है)"
+  },
+  "eu": {
+   "en": "0.05 mg/kg for sesame seeds. 0.1 mg/kg for spices and spice blends.",
+   "hi": "तिल के लिए 0.05 मिग्रा/किग्रा। मसाले और मसाला मिश्रण के लिए 0.1 मिग्रा/किग्रा।"
+  },
+  "us": {
+   "en": "7 mg/kg (EO fumigation is an approved US treatment)",
+   "hi": "7 मिग्रा/किग्रा (EO धूमन अमेरिका में अनुमोदित उपचार है)"
+  },
+  "india": {
+   "en": "No limit set (FSSAI does not list this substance)",
+   "hi": "कोई सीमा तय नहीं (FSSAI की सूची में यह पदार्थ नहीं है)"
+  },
+  "finding": {
+   "en": "The biggest gap in the data. The US limit is 140 times the EU sesame limit and 70 times the EU spice limit. India has no limit at all. A lot legal in India and the US can be far over the EU limit.",
+   "hi": "डेटा का सबसे बड़ा अंतर। अमेरिका की सीमा EU की तिल सीमा से 140 गुना और मसाला सीमा से 70 गुना है। भारत में कोई सीमा नहीं। भारत और अमेरिका में वैध लॉट EU सीमा से कहीं ऊपर हो सकता है।"
+  },
+  "fix": [
+   {
+    "en": "Do not fumigate EU-bound sesame or spice lots with ethylene oxide. Use steam sterilisation, or irradiation where the importer accepts it.",
+    "hi": "EU-बाउंड तिल या मसाले के लॉट को एथिलीन ऑक्साइड से धूमित न करें। भाप से स्टरलाइज़ेशन करें, या जहाँ आयातक मान ले वहाँ विकिरण।"
+   },
+   {
+    "en": "Get a written no-EO-fumigation declaration from the processor.",
+    "hi": "प्रोसेसर से एथिलीन ऑक्साइड धूमन न करने की लिखित घोषणा लें।"
+   },
+   {
+    "en": "Test at 0.1 mg/kg or lower (sum of EO and 2-chloroethanol) before shipping. This one is cheap to fix because it is a choice made after harvest.",
+    "hi": "शिपमेंट से पहले 0.1 मिग्रा/किग्रा या कम पर जाँच करें (EO और 2-क्लोरोएथेनॉल का योग)। इसे ठीक करना सस्ता है क्योंकि यह कटाई के बाद का फ़ैसला है।"
+   }
+  ]
+ },
+ "shrimp": {
+  "type": "enforcement",
+  "hazard": {
+   "en": "Nitrofurans (banned veterinary antibiotics)",
+   "hi": "नाइट्रोफ्यूरान (प्रतिबंधित पशु-चिकित्सा एंटीबायोटिक)"
+  },
+  "eu": {
+   "en": "0.5 µg/kg per metabolite (reference point for action)",
+   "hi": "प्रति मेटाबोलाइट 0.5 µg/kg (कार्रवाई का संदर्भ बिंदु)"
+  },
+  "us": {
+   "en": "Banned at any level. FDA Import Alert 16-129 names specific Indian firms for automatic detention.",
+   "hi": "किसी भी स्तर पर प्रतिबंधित। FDA इम्पोर्ट अलर्ट 16-129 में कुछ भारतीय कंपनियों के नाम हैं जिनकी खेप अपने-आप रोकी जाती है।"
+  },
+  "india": {
+   "en": "0.5 µg/kg (same as the EU)",
+   "hi": "0.5 µg/kg (EU जितनी)"
+  },
+  "finding": {
+   "en": "This is not a limit gap. India's number matches the EU and the US bans it outright. Rejections come from banned antibiotics actually used in the hatchery or farm supply chain.",
+   "hi": "यह सीमा का अंतर नहीं है। भारत की संख्या EU से मेल खाती है और अमेरिका इसे पूरी तरह प्रतिबंधित करता है। रिजेक्शन हैचरी या फार्म की सप्लाई चेन में प्रतिबंधित एंटीबायोटिक के असल इस्तेमाल से आते हैं।"
+  },
+  "fix": [
+   {
+    "en": "Audit antibiotic use at the hatchery and farm directly. A lab test alone won't fix a supply-chain problem.",
+    "hi": "हैचरी और फार्म पर एंटीबायोटिक के इस्तेमाल का सीधे ऑडिट करें। सिर्फ़ लैब टेस्ट से सप्लाई चेन की समस्या ठीक नहीं होगी।"
+   },
+   {
+    "en": "Test every lot for nitrofuran metabolites (ELISA screen, then LC-MS/MS confirmation), whatever the destination.",
+    "hi": "हर लॉट की नाइट्रोफ्यूरान मेटाबोलाइट जाँच कराएँ (ELISA स्क्रीन, फिर LC-MS/MS पुष्टि), गंतव्य कोई भी हो।"
+   },
+   {
+    "en": "Check your processor against FDA Import Alerts 16-129 and 16-131 before shipping to the US. MPEDA's SHAPHARI aquaculture certification targets exactly these residues.",
+    "hi": "US भेजने से पहले अपने प्रोसेसर को FDA इम्पोर्ट अलर्ट 16-129 और 16-131 की सूची में देखें। MPEDA की SHAPHARI एक्वाकल्चर प्रमाणन योजना ठीक इन्हीं अवशेषों पर केंद्रित है।"
+   }
+  ]
+ },
+ "herbal": {
+  "type": "norule",
+  "hazard": {
+   "en": "Unapproved drug claim (not a residue limit)",
+   "hi": "अनुमोदित नहीं दवा का दावा (अवशेष सीमा नहीं)"
+  },
+  "eu": {
+   "en": "No residue number. Handled as novel-food clearance, composition and labelling rules.",
+   "hi": "कोई अवशेष संख्या नहीं। नॉवेल-फूड मंज़ूरी, संरचना और लेबलिंग नियमों के तहत।"
+  },
+  "us": {
+   "en": "Refused as an unapproved new drug when the label or marketing makes disease-treatment claims (FDA charge code 75)",
+   "hi": "लेबल या मार्केटिंग में रोग-उपचार के दावे हों तो अनुमोदित नहीं नई दवा मानकर रिफ्यूज (FDA चार्ज कोड 75)"
+  },
+  "india": {
+   "en": "Ayurvedic products with therapeutic claims fall under AYUSH licensing, not FSSAI food limits",
+   "hi": "चिकित्सीय दावों वाले आयुर्वेदिक उत्पाद AYUSH लाइसेंसिंग के तहत आते हैं, FSSAI की खाद्य सीमाओं के नहीं"
+  },
+  "finding": {
+   "en": "No chemical number to test against. The problem is what the label and marketing say. This category needs a labelling and claims review, not a lab test.",
+   "hi": "जाँचने के लिए कोई रासायनिक संख्या नहीं। समस्या यह है कि लेबल और मार्केटिंग क्या कहते हैं। इस श्रेणी में लैब टेस्ट नहीं, लेबलिंग और दावों की समीक्षा चाहिए।"
+  },
+  "fix": [
+   {
+    "en": "Review labels and marketing claims against FDA drug-claim criteria before listing in the US. Structure/function claims need the DSHEA disclaimer and no disease claims.",
+    "hi": "US में लिस्ट करने से पहले लेबल और मार्केटिंग दावों को FDA के दवा-दावा मापदंडों से जाँचें। स्ट्रक्चर/फंक्शन दावों के लिए DSHEA अस्वीकरण चाहिए और कोई रोग-दावा नहीं।"
+   },
+   {
+    "en": "For the EU, confirm the ingredient has Novel Food clearance or documented history of use.",
+    "hi": "EU के लिए पक्का करें कि सामग्री को नॉवेल फूड मंज़ूरी है या उपयोग का दस्तावेज़ी इतिहास है।"
+   }
+  ]
+ },
+ "pepper": {
+  "type": "mismatch",
+  "hazard": {
+   "en": "Chlorpyrifos for the EU. Salmonella and filth for the US.",
+   "hi": "EU के लिए क्लोरपायरीफॉस। US के लिए साल्मोनेला और गंदगी।"
+  },
+  "eu": {
+   "en": "0.01 mg/kg (default limit, in practice zero)",
+   "hi": "0.01 मिग्रा/किग्रा (डिफ़ॉल्ट सीमा, व्यवहार में शून्य)"
+  },
+  "us": {
+   "en": "No tolerance on this crop (zero)",
+   "hi": "इस फसल पर कोई सहनसीमा नहीं (शून्य)"
+  },
+  "india": {
+   "en": "No limit set for this crop",
+   "hi": "इस फसल के लिए कोई सीमा तय नहीं"
+  },
+  "finding": {
+   "en": "Two separate problems. Chlorpyrifos: EU at 0.01, US at zero, India silent. Salmonella and filth: 88 of the 104 US refusals. This is no limit gap. FDA Import Alert 28-02 has covered Indian pepper since 1987.",
+   "hi": "दो अलग समस्याएँ। क्लोरपायरीफॉस: EU में 0.01, US में शून्य, भारत में कोई सीमा नहीं। साल्मोनेला और गंदगी: US के 104 में से 88 रिफ्यूज़ल। यह सीमा का अंतर नहीं है। FDA इम्पोर्ट अलर्ट 28-02 1987 से भारतीय काली मिर्च पर लागू है।"
+  },
+  "fix": [
+   {
+    "en": "US-bound: attach a valid EIC certificate (mandatory under Import Alert 28-02) and re-test for Salmonella and filth just before shipping.",
+    "hi": "US-बाउंड: वैध EIC प्रमाणपत्र लगाएँ (इम्पोर्ट अलर्ट 28-02 में अनिवार्य) और शिपमेंट से ठीक पहले साल्मोनेला और गंदगी की दोबारा जाँच करें।"
+   },
+   {
+    "en": "EU-bound: treat chlorpyrifos as banned, not just limited. Keep spray records for every lot.",
+    "hi": "EU-बाउंड: क्लोरपायरीफॉस को सिर्फ़ सीमित नहीं, प्रतिबंधित मानें। हर लॉट के स्प्रे रिकॉर्ड रखें।"
+   },
+   {
+    "en": "Ask the Spices Board about its INDGAP good-practice certification for spice farms.",
+    "hi": "मसाला बोर्ड से मसाला खेतों के लिए उसके INDGAP अच्छे-कृषि-अभ्यास प्रमाणन के बारे में पूछें।"
+   }
+  ]
+ },
+ "chilli": {
+  "type": "mismatch",
+  "hazard": {
+   "en": "Aflatoxin (B1 / total)",
+   "hi": "अफ्लाटॉक्सिन (B1 / कुल)"
+  },
+  "eu": {
+   "en": "B1 5 / total 10 µg/kg (chilli, paprika, pepper, ginger, turmeric, spice mixes)",
+   "hi": "B1 5 / कुल 10 µg/kg (मिर्च, पेपरिका, काली मिर्च, अदरक, हल्दी, मसाला मिश्रण)"
+  },
+  "us": {
+   "en": "20 µg/kg total (FDA general action level, no spice-specific limit)",
+   "hi": "कुल 20 µg/kg (FDA सामान्य कार्रवाई स्तर, मसालों के लिए अलग सीमा नहीं)"
+  },
+  "india": {
+   "en": "B1 15 / total 30 µg/kg (spices)",
+   "hi": "B1 15 / कुल 30 µg/kg (मसाले)"
+  },
+  "finding": {
+   "en": "A clean three-way ladder: EU strictest (5/10), the US in the middle (20 total), India loosest (15/30, three times the EU total). A lot that passes FSSAI can fail in Europe.",
+   "hi": "साफ़ तीन-स्तरीय सीढ़ी: EU सबसे सख्त (5/10), US बीच में (कुल 20), भारत सबसे ढीला (15/30, EU की कुल सीमा का तीन गुना)। FSSAI पास लॉट यूरोप में फेल हो सकता है।"
+  },
+  "fix": [
+   {
+    "en": "Test every EU-bound lot for aflatoxin to the 5/10 µg/kg standard, even if it already passes the looser FSSAI limit.",
+    "hi": "हर EU-बाउंड लॉट की अफ्लाटॉक्सिन जाँच 5/10 µg/kg मानक पर कराएँ, भले वह ढीली FSSAI सीमा पास कर चुका हो।"
+   },
+   {
+    "en": "Control drying and moisture, and sort out mould-damaged pods at the farm gate. Aflatoxin is a field and storage mould problem that a lab test cannot undo.",
+    "hi": "सुखाने और नमी को नियंत्रित करें, और खेत के गेट पर फफूंद लगी फलियाँ छाँट दें। अफ्लाटॉक्सिन खेत और भंडारण की फफूंद की समस्या है जिसे लैब टेस्ट ठीक नहीं कर सकता।"
+   }
+  ]
+ },
+ "coriander": {
+  "type": "mismatch",
+  "hazard": {
+   "en": "Chlorpyrifos (pesticide)",
+   "hi": "क्लोरपायरीफॉस (कीटनाशक)"
+  },
+  "eu": {
+   "en": "0.01 mg/kg (default limit, in practice zero)",
+   "hi": "0.01 मिग्रा/किग्रा (डिफ़ॉल्ट सीमा, व्यवहार में शून्य)"
+  },
+  "us": {
+   "en": "No tolerance on this crop (zero)",
+   "hi": "इस फसल पर कोई सहनसीमा नहीं (शून्य)"
+  },
+  "india": {
+   "en": "No limit set for this crop",
+   "hi": "इस फसल के लिए कोई सीमा तय नहीं"
+  },
+  "finding": {
+   "en": "Same pattern as pepper, cumin, turmeric, fenugreek, fennel and mango: the EU enforces at 0.01, the US allows none, and India has no chlorpyrifos limit for coriander.",
+   "hi": "काली मिर्च, जीरा, हल्दी, मेथी, सौंफ और आम जैसा ही पैटर्न: EU 0.01 पर लागू करता है, US कुछ भी अनुमति नहीं देता, और भारत में धनिया के लिए क्लोरपायरीफॉस की कोई सीमा नहीं।"
+  },
+  "fix": [
+   {
+    "en": "Treat chlorpyrifos as fully prohibited on export coriander. Both markets are at zero.",
+    "hi": "निर्यात के धनिया पर क्लोरपायरीफॉस को पूरी तरह प्रतिबंधित मानें। दोनों बाज़ार शून्य पर हैं।"
+   },
+   {
+    "en": "Check farm input records, not only a lab test. One bad consignment can get a firm flagged.",
+    "hi": "सिर्फ़ लैब टेस्ट नहीं, खेत के इनपुट रिकॉर्ड भी जाँचें। एक खराब खेप से कंपनी निशाने पर आ सकती है।"
+   }
+  ]
+ },
+ "cumin": {
+  "type": "mismatch",
+  "hazard": {
+   "en": "Chlorpyrifos (pesticide). Also pyrrolizidine alkaloids.",
+   "hi": "क्लोरपायरीफॉस (कीटनाशक)। साथ में पाइरोलिज़िडीन एल्कलॉइड।"
+  },
+  "eu": {
+   "en": "0.01 mg/kg (default limit, in practice zero)",
+   "hi": "0.01 मिग्रा/किग्रा (डिफ़ॉल्ट सीमा, व्यवहार में शून्य)"
+  },
+  "us": {
+   "en": "No tolerance on this crop (zero)",
+   "hi": "इस फसल पर कोई सहनसीमा नहीं (शून्य)"
+  },
+  "india": {
+   "en": "No limit set for this crop",
+   "hi": "इस फसल के लिए कोई सीमा तय नहीं"
+  },
+  "finding": {
+   "en": "The richest case in the data: 70 EU notifications on cumin alone, with chlorpyrifos named in more than 30. Separately, pyrrolizidine alkaloids come from weed seeds mixed into the crop. That is a contamination problem, not a limit problem.",
+   "hi": "डेटा का सबसे समृद्ध मामला: अकेले जीरा पर 70 EU नोटिफिकेशन, जिनमें 30 से ज़्यादा में क्लोरपायरीफॉस का नाम। अलग से, पाइरोलिज़िडीन एल्कलॉइड फसल में मिले खरपतवार के बीजों से आते हैं। यह संदूषण की समस्या है, सीमा की नहीं।"
+  },
+  "fix": [
+   {
+    "en": "Treat chlorpyrifos as banned on export lots, not merely limited.",
+    "hi": "निर्यात लॉट पर क्लोरपायरीफॉस को सिर्फ़ सीमित नहीं, प्रतिबंधित मानें।"
+   },
+   {
+    "en": "For pyrrolizidine alkaloids: control weeds such as Heliotropium in and around cumin fields, then optical or mechanical sorting after harvest to remove weed seed.",
+    "hi": "पाइरोलिज़िडीन एल्कलॉइड के लिए: जीरे के खेत और आसपास हेलियोट्रोपियम जैसे खरपतवार नियंत्रित करें, फिर कटाई के बाद खरपतवार के बीज हटाने के लिए ऑप्टिकल या मैकेनिकल सॉर्टिंग करें।"
+   }
+  ]
+ },
+ "turmeric": {
+  "type": "mismatch",
+  "hazard": {
+   "en": "Chlorpyrifos. Also illegal colours (Rhodamine B, methyl yellow).",
+   "hi": "क्लोरपायरीफॉस। साथ में अवैध रंग (रोडामाइन B, मिथाइल येलो)।"
+  },
+  "eu": {
+   "en": "0.01 mg/kg (default limit, in practice zero)",
+   "hi": "0.01 मिग्रा/किग्रा (डिफ़ॉल्ट सीमा, व्यवहार में शून्य)"
+  },
+  "us": {
+   "en": "No tolerance on this crop (zero)",
+   "hi": "इस फसल पर कोई सहनसीमा नहीं (शून्य)"
+  },
+  "india": {
+   "en": "No limit set for this crop",
+   "hi": "इस फसल के लिए कोई सीमा तय नहीं"
+  },
+  "finding": {
+   "en": "Two unrelated stories. Chlorpyrifos: same gap as the other spices. Illegal colours: banned in India, the EU and the US alike, so every case is a supply-chain or adulteration failure, not a limit mismatch.",
+   "hi": "दो असंबंधित कहानियाँ। क्लोरपायरीफॉस: बाकी मसालों जैसा ही अंतर। अवैध रंग: भारत, EU और US तीनों में प्रतिबंधित, इसलिए हर मामला सप्लाई-चेन या मिलावट की विफलता है, सीमा का अंतर नहीं।"
+  },
+  "fix": [
+   {
+    "en": "Chlorpyrifos: treat as banned on export lots.",
+    "hi": "क्लोरपायरीफॉस: निर्यात लॉट पर प्रतिबंधित मानें।"
+   },
+   {
+    "en": "Colours: buy from audited mills, and spot-test finished powder for Sudan-family dyes (rapid TLC or HPLC screens are cheap). This is a chain-of-custody problem, not a test-threshold problem.",
+    "hi": "रंग: ऑडिट की हुई मिलों से खरीदें, और तैयार पाउडर में सूडान-परिवार के रंगों की स्पॉट जाँच करें (रैपिड TLC या HPLC सस्ते हैं)। यह चेन-ऑफ-कस्टडी की समस्या है, टेस्ट-सीमा की नहीं।"
+   }
+  ]
+ },
+ "fenugreek": {
+  "type": "mismatch",
+  "hazard": {
+   "en": "Chlorpyrifos (pesticide)",
+   "hi": "क्लोरपायरीफॉस (कीटनाशक)"
+  },
+  "eu": {
+   "en": "0.01 mg/kg (default limit, in practice zero)",
+   "hi": "0.01 मिग्रा/किग्रा (डिफ़ॉल्ट सीमा, व्यवहार में शून्य)"
+  },
+  "us": {
+   "en": "No tolerance on this crop (zero)",
+   "hi": "इस फसल पर कोई सहनसीमा नहीं (शून्य)"
+  },
+  "india": {
+   "en": "No limit set for this crop",
+   "hi": "इस फसल के लिए कोई सीमा तय नहीं"
+  },
+  "finding": {
+   "en": "Same chlorpyrifos gap as the other spices. Fenugreek is sold both as seed (spice) and as leaves (herb or vegetable), which may sit in different Indian rule buckets even though EU and US enforcement treats them alike.",
+   "hi": "बाकी मसालों जैसा ही क्लोरपायरीफॉस अंतर। मेथी बीज (मसाला) और पत्तों (जड़ी-बूटी या सब्ज़ी) दोनों रूप में बिकती है, जो भारतीय नियमों में अलग श्रेणी में आ सकते हैं जबकि EU और US दोनों को एक जैसा मानते हैं।"
+  },
+  "fix": [
+   {
+    "en": "Treat chlorpyrifos as banned for export lots, leaf or seed.",
+    "hi": "निर्यात लॉट के लिए क्लोरपायरीफॉस को प्रतिबंधित मानें, पत्ता हो या बीज।"
+   },
+   {
+    "en": "Because the sample is small, ask an FSSAI regional office or the Spices Board how leaf versus seed is classified.",
+    "hi": "नमूना छोटा है, इसलिए FSSAI क्षेत्रीय कार्यालय या मसाला बोर्ड से पूछें कि पत्ते और बीज का वर्गीकरण कैसे होता है।"
+   }
+  ]
+ },
+ "fennel": {
+  "type": "mismatch",
+  "hazard": {
+   "en": "Chlorpyrifos (pesticide)",
+   "hi": "क्लोरपायरीफॉस (कीटनाशक)"
+  },
+  "eu": {
+   "en": "0.01 mg/kg (default limit, in practice zero)",
+   "hi": "0.01 मिग्रा/किग्रा (डिफ़ॉल्ट सीमा, व्यवहार में शून्य)"
+  },
+  "us": {
+   "en": "No tolerance on this crop (zero)",
+   "hi": "इस फसल पर कोई सहनसीमा नहीं (शून्य)"
+  },
+  "india": {
+   "en": "No limit set for this crop",
+   "hi": "इस फसल के लिए कोई सीमा तय नहीं"
+  },
+  "finding": {
+   "en": "Fennel is the lowest-volume category. EU refusals are a clean chlorpyrifos case. The larger US count is dominated by an unauthorised-colour charge that this project could not trace to a named substance.",
+   "hi": "सौंफ सबसे कम मात्रा वाली श्रेणी है। EU रिफ्यूज़ल साफ़ तौर पर क्लोरपायरीफॉस के मामले हैं। US की बड़ी संख्या अनधिकृत-रंग वाले चार्ज की है जिसे इस प्रोजेक्ट में किसी नामित पदार्थ तक नहीं पहुँचाया जा सका।"
+  },
+  "fix": [
+   {
+    "en": "Treat chlorpyrifos as banned for EU-bound lots.",
+    "hi": "EU-बाउंड लॉट के लिए क्लोरपायरीफॉस को प्रतिबंधित मानें।"
+   },
+   {
+    "en": "For the colour issue the substance is unknown, so check your own colouring and processing steps before shipping to the US.",
+    "hi": "रंग वाली समस्या में पदार्थ अज्ञात है, इसलिए US भेजने से पहले अपनी रंगाई और प्रोसेसिंग के चरण जाँचें।"
+   }
+  ]
+ },
+ "mango": {
+  "type": "mismatch",
+  "hazard": {
+   "en": "Chlorpyrifos (also quinalphos)",
+   "hi": "क्लोरपायरीफॉस (क्विनालफॉस भी)"
+  },
+  "eu": {
+   "en": "0.01 mg/kg (default limit, in practice zero)",
+   "hi": "0.01 मिग्रा/किग्रा (डिफ़ॉल्ट सीमा, व्यवहार में शून्य)"
+  },
+  "us": {
+   "en": "No tolerance on this crop (zero)",
+   "hi": "इस फसल पर कोई सहनसीमा नहीं (शून्य)"
+  },
+  "india": {
+   "en": "0.5 mg/kg (general \"other fruits\" limit)",
+   "hi": "0.5 मिग्रा/किग्रा (सामान्य \"अन्य फल\" सीमा)"
+  },
+  "finding": {
+   "en": "The cleanest true mismatch after rice. India allows 0.5 mg/kg, which is 50 times the EU default (0.01), and the US now allows none. A mango lot fully legal in India can still fail EU testing.",
+   "hi": "चावल के बाद सबसे साफ़ असली अंतर। भारत 0.5 मिग्रा/किग्रा की अनुमति देता है, जो EU डिफ़ॉल्ट (0.01) से 50 गुना है, और US अब कुछ भी अनुमति नहीं देता। भारत में पूरी तरह वैध आम का लॉट भी EU जाँच में फेल हो सकता है।"
+  },
+  "fix": [
+   {
+    "en": "Do not use India's 0.5 mg/kg as the benchmark for EU-bound mango. Test and manage to 0.01 mg/kg, or keep chlorpyrifos off export-designated orchard blocks entirely.",
+    "hi": "EU-बाउंड आम के लिए भारत की 0.5 मिग्रा/किग्रा को मानक न मानें। 0.01 मिग्रा/किग्रा पर जाँच और प्रबंधन करें, या निर्यात के लिए तय बाग़ ब्लॉक में क्लोरपायरीफॉस बिल्कुल न डालें।"
+   },
+   {
+    "en": "Waiting out the pre-harvest interval is unlikely to bring a 0.5 mg/kg-level application down to 0.01.",
+    "hi": "कटाई-पूर्व अंतराल का इंतज़ार करने से 0.5 मिग्रा/किग्रा स्तर पर डाला गया रसायन शायद ही 0.01 तक आएगा।"
+   }
+  ]
+ }
+}

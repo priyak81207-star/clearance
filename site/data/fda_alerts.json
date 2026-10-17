@@ -1,0 +1,584 @@
+[
+ {
+  "n": "03-05",
+  "t": "Detention Without Physical Examination of Papad and Farfar Wafers From India",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "16-02",
+  "t": "Detention Without Physical Examination of All Dried Shark Fins, Dried Fish Maws and Dried Shark Cartilage Powder Due to Filth",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "16-04",
+  "t": "Detention Without Physical Examination of Seafood Products That Appear To Be Misbranded",
+  "why": "General seafood misbranding alert; broader than shrimp but the only India-relevant seafood export line in the 15 categories.",
+  "cats": [
+   2
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "16-105",
+  "t": "Detention Without Physical Examination of Fish and Fishery Products Due to Decomposition and/or Histamine, and/or Indole",
+  "why": "Decomposition/histamine is a seafood-handling (cold-chain) issue distinct from the nitrofurans/antibiotics story already in the Phase 3 sheet — a second, real seafood risk vector worth knowing about even though it did not show up as a dominant Phase 1 US charge code for shrimp.",
+  "cats": [
+   2
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "16-119",
+  "t": "Detention Without Physical Examination of Fish and Fishery Products for Importer and Foreign Processor (Manufacturer) Combinations",
+  "why": "Firm-specific listing mechanism — relevant to understanding how an individual Indian shrimp processor gets targeted, not a hazard in itself.",
+  "cats": [
+   2
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "16-120",
+  "t": "Detention Without Physical Examination of Fish and Fishery Products From Foreign Processors Not in Compliance With Seafood HACCP Regulation",
+  "why": "Process-control (HACCP) compliance, not a residue/contamination limit — a GMP-type finding, same category as the \"filth\" qualitative standard discussed elsewhere in Phase 3.",
+  "cats": [
+   2
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "16-124",
+  "t": "Detention Without Physical Examination of Aquaculture Seafood Products Due to Unapproved Drugs",
+  "why": "Sibling alert to 16-129 (nitrofurans) — covers OTHER unapproved veterinary drugs in farmed shrimp beyond nitrofurans specifically (e.g. chloramphenicol, malachite green). Should be read alongside the Phase 3 shrimp row.",
+  "cats": [
+   2
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "16-129",
+  "t": "Detention Without Physical Examination of Seafood Products Due to Nitrofurans",
+  "why": "Already cited directly in the Phase 3 sheet's shrimp row — the single most consequential shrimp-specific alert, with multiple named Indian firms on the current Red List.",
+  "cats": [
+   2
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "16-23",
+  "t": "Detention Without Physical Examination of Fresh and Fresh Frozen Lobster/Lobster Tails From India",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "16-35",
+  "t": "Detention Without Physical Examination of Raw and Cooked Shrimp From India",
+  "why": "A broader, India-specific shrimp alert (not limited to the nitrofurans hazard) — worth citing alongside 16-129 since it shows shrimp from India carries multiple, independent DWPE mechanisms, not just the antibiotic-residue one.",
+  "cats": [
+   2
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "16-81",
+  "t": "Detention Without Physical Examination of Seafood Products Due to the Presence of Salmonella",
+  "why": "Salmonella in seafood specifically — relevant since Salmonella is also the dominant FDA charge code for several spice categories (see 99-19 below), showing it as a cross-cutting hazard rather than one confined to any single product.",
+  "cats": [
+   2
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "21-07",
+  "t": "Detention Without Physical Examination of Tamarind and Tamarind Products Due to Filth",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "23-12",
+  "t": "Detention Without Physical Examination of Coconut Due to Microbiological Contamination",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "23-14",
+  "t": "Detention Without Physical Examination of Food Products Due to the Presence of Mycotoxins",
+  "why": "Directly names the same mycotoxin (aflatoxin, DON, fumonisin, ochratoxin A) hazard already quantified in the Phase 3 sheet for groundnuts and chilli; India appears extensively on this alert's Red List across multiple product types.",
+  "cats": [
+   4,
+   6,
+   9
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "28-02",
+  "t": "Detention Without Physical Examination of Black Pepper From India",
+  "why": "India's only single-commodity, single-country FDA import alert among the 15 categories — in force since 1987 for filth/Salmonella; cited directly in the Phase 3 black-pepper row.",
+  "cats": [
+   5
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "36-04",
+  "t": "Detention Without Physical Examination of Honey and Blended Syrup Due to Unsafe Drug Residues",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "40-05",
+  "t": "Detention Without Physical Examination of Adulterated and Misbranded Infant Formula",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "45-02",
+  "t": "Detention Without Physical Examination and Guidance of Foods Containing Illegal and/or Undeclared Colors",
+  "why": "Directly relevant to the Rhodamine B / methyl yellow illegal-colorant finding flagged in the Phase 3 turmeric row — this is the actual mechanism FDA uses to act on that hazard.",
+  "cats": [
+   6,
+   9
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "53-06",
+  "t": "Detention Without Physical Examination of Cosmetics Due to Color Additive Violations",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "53-17",
+  "t": "Detention Without Physical Examination of Cosmetics Due to Microbiological Contamination",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "54-14",
+  "t": "Detention Without Physical Examination of Dietary Supplement Products From Firms That Have Not Met Dietary Supplement GMP",
+  "why": "GMP-compliance mechanism directly relevant to herbal/botanical supplement exporters — a facility-level, not a formula-level, requirement, so it is fixable by process certification rather than product reformulation.",
+  "cats": [
+   14
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "54-16",
+  "t": "Detention Without Physical Examination of Products Marketed as Foods, Including Dietary Supplements, That Contain an Active Pharmaceutical Ingredient",
+  "why": "Directly the same \"unapproved drug / unauthorized health claim\" hazard already in the Phase 3 herbal-supplements row — this alert is the enforcement mechanism, and its presence confirms the hazard is being formally tracked at the firm level, not just charge-coded case by case.",
+  "cats": [
+   14
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "55-05",
+  "t": "Detention Without Physical Examination of Finished Dosage Form Drug Products, APIs, and Inactive Ingredients for Microbiological Contamination",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "66-40",
+  "t": "Detention Without Physical Examination of Drugs From Firms Which Have Not Met Drug GMPs",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "66-41",
+  "t": "Detention Without Physical Examination of Unapproved New Drugs Promoted in the U.S.",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "66-57",
+  "t": "Detention Without Physical Examination of Foreign Manufactured Unapproved Prescription Drugs",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "66-66",
+  "t": "APIs That Appear to Be Misbranded Under 502(f)(1)",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "66-76",
+  "t": "Detention Without Physical Examination of Drugs or APIs From Facilities That Have Not Paid GDUFA Fees",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "66-79",
+  "t": "Detention Without Physical Examination of Drugs From Foreign Establishments Refusing FDA Inspection",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "68-20",
+  "t": "Detention Without Physical Examination of Animal Drugs Subject to Human Diversion/Misuse",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "71-04",
+  "t": "Detention Without Physical Examination of Food for Animals Due to Salmonella",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "79-01",
+  "t": "Detention Without Physical Examination of Topical/External Bandages Due to Microbiological Contamination",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "80-04",
+  "t": "Surveillance and Detention Without Physical Examination of Surgeon's and Patient Examination Gloves",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "80-06",
+  "t": "Detention Without Physical Examination of Medical Devices With False or Misleading Labeling",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "85-02",
+  "t": "Detention Without Physical Examination of Condoms",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "89-04",
+  "t": "Detention Without Physical Examination of Devices From Firms That Have Not Met Device QS Requirements",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "89-08",
+  "t": "Detention Without Physical Examination of Devices Without Approved PMAs/IDEs or 510(k)",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "89-16",
+  "t": "Detention Without Physical Examination of Products From Medical Device Firms Refusing FDA Inspection",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "98-04",
+  "t": "Detention Without Physical Examination of Certain Regulated Tobacco Products Found Not Substantially Equivalent",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "98-06",
+  "t": "Detention Without Physical Examination of New Tobacco Products Without Required Marketing Authorization",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "98-08",
+  "t": "Detention Without Physical Examination of Certain Regulated Tobacco Products Lacking Required Labeling",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "99-05",
+  "t": "Detention Without Physical Examination of Raw Agricultural Products for Pesticides",
+  "why": "The general-purpose pesticide-residue DWPE mechanism — this (plus 99-08 below) is the actual enforcement vehicle behind essentially every \"pesticide residues\" / \"chemical contamination\" FDA charge code already counted across the Phase 1 dataset and the chlorpyrifos findings in Phase 3.",
+  "cats": [],
+  "general": true,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "99-08",
+  "t": "Detention Without Physical Examination of Processed Human and Animal Foods for Pesticides",
+  "why": "Sibling to 99-05 for processed/powdered forms — together these two alerts are the single most consequential pair on this whole list for the Phase 1/3 pesticide-residue findings (chlorpyrifos, tricyclazole, ethylene oxide).",
+  "cats": [],
+  "general": true,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "99-19",
+  "t": "Detention Without Physical Examination of Food Products Due to the Presence of Salmonella",
+  "why": "The general Salmonella DWPE mechanism for food products generally (explicitly excludes black pepper, which has its own dedicated alert 28-02, and seafood, which has 16-81) — directly the enforcement vehicle behind the Salmonella/microbiological-contamination charge codes that dominate several spice categories' FDA refusal counts in this dataset.",
+  "cats": [
+   3,
+   5,
+   6,
+   7,
+   9,
+   12
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "99-21",
+  "t": "Detention Without Physical Examination of Food Products Containing Undeclared Added Sulfiting Agents",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "99-22",
+  "t": "Detention Without Physical Examination of Foods Containing Undeclared Major Food Allergens",
+  "why": "Directly matches the one \"undeclared allergen mustard in ground coriander\" finding surfaced in the coriander RASFF records — a labeling/cross-contamination issue, not a residue-limit one.",
+  "cats": [
+   7
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "99-31",
+  "t": "Detention Without Physical Examination of Food Products Due to Melamine and/or Melamine Analogs",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "99-32",
+  "t": "Detention Without Physical Examination of Human and Animal Food Products From Foreign Establishments Refusing FDA Inspection",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "99-34",
+  "t": "Detention Without Physical Examination of Drugs or Medical Devices From Firms Without Valid Registration",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "99-36",
+  "t": "Detention Without Physical Examination of Low-Acid Canned Foods for Failure to Provide Process Information",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "99-37",
+  "t": "Detention Without Physical Examination of Low-Acid Canned Foods Without Filed Scheduled Processes",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "99-38",
+  "t": "Detention Without Physical Examination of Low-Acid Canned Foods Due to Inadequate Process Control",
+  "why": "",
+  "cats": [],
+  "general": false,
+  "relevant": false,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "99-39",
+  "t": "Detention Without Physical Examination of Imported Food Products That Appear to Be Misbranded",
+  "why": "General misbranding DWPE mechanism — matches the \"labeling/misbranding\" FDA charge-code bucket already present in several categories' Phase 1 counts.",
+  "cats": [],
+  "general": true,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "99-42",
+  "t": "Detention Without Physical Examination of Foods Due to Heavy Metal (Toxic Element) Contamination",
+  "why": "Directly matches the \"chemical/heavy-metal contamination\" FDA charge-code bucket that is a top-2 reason for Fenugreek specifically in the Phase 1 US data (5 of 16 rows) — this alert is likely the enforcement vehicle, though the specific metal (lead is common in turmeric/spice adulteration cases generally) is not named in FDA's public bulk refusal data per this project's existing epistemic-honesty note.",
+  "cats": [
+   6,
+   7,
+   10
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "99-43",
+  "t": "Detention Without Physical Examination of Ready-To-Eat Foods Prepared/Packed/Held Under Insanitary Conditions",
+  "why": "The general insanitary-conditions (GMP) DWPE mechanism — this is the enforcement vehicle behind the \"filth / insanitary conditions\" charge-code bucket that is a top reason across almost every spice category in the Phase 1 US data, reinforcing that this is a facility/process finding, not a residue-limit one.",
+  "cats": [
+   5,
+   6,
+   7,
+   8,
+   9,
+   11
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "99-45",
+  "t": "Detention Without Physical Examination of Food Products That Are or Contain an Unsafe Food Additive",
+  "why": "Matches the \"unauthorized additive/colorant\" FDA charge-code bucket that is fennel's single dominant US refusal reason (28 of 39 rows) and part of turmeric's illegal-colorant finding.",
+  "cats": [
+   9,
+   11
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "99-46",
+  "t": "Detention Without Physical Examination of Imported Human Foods Due to Filth",
+  "why": "General filth DWPE mechanism, sibling to 99-43 (insanitary conditions) — together these cover the qualitative, non-MRL \"filth/GMP\" hazard type discussed throughout the Phase 3 sheet.",
+  "cats": [
+   5,
+   6,
+   7,
+   9,
+   13
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ },
+ {
+  "n": "99-47",
+  "t": "Detention Without Physical Examination of Human Food Products That Appear to Be Adulterated for Economic Gain",
+  "why": "Economic-adulteration DWPE mechanism — directly relevant to the Rhodamine B/methyl yellow illegal-dye finding in turmeric, since colouring turmeric to mask lower quality or bulk it up is textbook economic adulteration.",
+  "cats": [
+   9
+  ],
+  "general": false,
+  "relevant": true,
+  "url": "https://www.accessdata.fda.gov/cms_ia/ialist.html"
+ }
+]

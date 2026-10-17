@@ -1,0 +1,67 @@
+[
+ {
+  "id": "pesticide",
+  "en": "Pesticide residues",
+  "hi": "कीटनाशक अवशेष"
+ },
+ {
+  "id": "microbial",
+  "en": "Bacteria / microbial contamination",
+  "hi": "जीवाणु / सूक्ष्मजीव संदूषण"
+ },
+ {
+  "id": "drugclaim",
+  "en": "Unapproved drug / health claim",
+  "hi": "अनुमोदित नहीं दवा / स्वास्थ्य दावा"
+ },
+ {
+  "id": "filth",
+  "en": "Filth / unhygienic conditions",
+  "hi": "गंदगी / अस्वच्छ स्थितियाँ"
+ },
+ {
+  "id": "additive",
+  "en": "Unauthorised additive or colour",
+  "hi": "अनधिकृत एडिटिव या रंग"
+ },
+ {
+  "id": "mycotoxin",
+  "en": "Mycotoxins (aflatoxin etc.)",
+  "hi": "फफूंद विष (अफ्लाटॉक्सिन आदि)"
+ },
+ {
+  "id": "label",
+  "en": "Labelling / misbranding",
+  "hi": "लेबलिंग / गलत ब्रांडिंग"
+ },
+ {
+  "id": "chemical",
+  "en": "Heavy metals / chemical contaminants",
+  "hi": "भारी धातु / रासायनिक संदूषक"
+ },
+ {
+  "id": "vetdrug",
+  "en": "Veterinary drug residues",
+  "hi": "पशु-चिकित्सा दवा अवशेष"
+ },
+ {
+  "id": "toxin",
+  "en": "Natural toxins",
+  "hi": "प्राकृतिक विष"
+ },
+ {
+  "id": "other",
+  "en": "Other / not specified",
+  "hi": "अन्य / निर्दिष्ट नहीं"
+ },
+ {
+  "id": "docs",
+  "en": "Documents / certificates",
+  "hi": "दस्तावेज़ / प्रमाणपत्र"
+ },
+ {
+  "id": "pest",
+  "en": "Pests / plant health",
+  "hi": "कीट / पादप-स्वास्थ्य"
+ }
+]
