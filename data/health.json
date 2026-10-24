@@ -1,21 +1,21 @@
 {
  "eu": {
   "status": "ok",
-  "last_ok": "2026-10-23 07:50",
-  "fetched": 13,
-  "added": 0,
+  "last_ok": "2026-10-24 07:31",
+  "fetched": 15,
+  "added": 2,
   "error": ""
  },
  "us": {
   "status": "ok",
   "error": "",
-  "last_ok": "2026-10-23 07:50",
+  "last_ok": "2026-10-24 07:31",
   "fetched": 128,
   "added": 0
  },
  "uk": {
   "status": "ok",
-  "last_ok": "2026-10-23 07:50",
+  "last_ok": "2026-10-24 07:31",
   "fetched": 70,
   "added": 33,
   "error": ""
@@ -26,17 +26,17 @@
  },
  "jp": {
   "status": "ok",
-  "last_ok": "2026-10-23 07:55",
+  "last_ok": "2026-10-24 07:36",
   "fetched": 10,
   "added": 0,
   "error": ""
  },
  "news": {
   "status": "ok",
-  "last_ok": "2026-10-23 07:55",
+  "last_ok": "2026-10-24 07:36",
   "feeds_ok": 17,
   "feeds": 17,
-  "items": 99,
+  "items": 106,
   "error": ""
  }
 }
